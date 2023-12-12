@@ -10,21 +10,24 @@
 ############################
 
 # Name of website
-title: My Website
+title: BDefects4NN
 
 # Your name to show in the footer
-author: Some Person
+author: BDefects4NN Team
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Home: "index"
+  Dataset: "dataset"
+  Experiments: "experiments"
+  # About Me: "aboutme"
+  # Resources:
+  #   - Beautiful Jekyll: "https://beautifuljekyll.com"
+  #   - Learn markdown: "https://www.markdowntutorial.com/"
+  # Author's home: "https://deanattali.com"
 
 ################
 # --- Logo --- #
