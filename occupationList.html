@@ -1,28 +1,36 @@
 ---
 layout: occupationList
-title: Occupation List
-permalink: /occupationList.html
+title: 'Occupation List'
 ---
 
-<div class="text-center">
-    Complete list of 92 female-dominated occupations remaining in our dataset after the Stereotyped Occupation Pairs Identification process.
-    <div id="jobList">
-        <h2>职业列表</h2>
-        <a href="#" onclick="updateTable('developer')">开发者</a>
-        <a href="#" onclick="updateTable('designer')">设计师</a>
-        <a href="#" onclick="updateTable('manager')">经理</a>
-        <!-- 更多职业链接 -->
-    </div>
+{% assign date_format = site.date_format | default: "%B %-d, %Y" %}
 
-    <div id="jobTable">
-        <h2>职业信息表</h2>
-        <table>
-            <tr>
-                <th>姓名</th>
-                <th>职位</th>
-                <th>公司</th>
-            </tr>
-            <!-- 表格内容将根据职业动态更新 -->
-        </table>
+{%- capture site_tags -%}
+    {%- for tag in site.tags -%}
+        {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+{%- endcapture -%}
+{%- assign tags_list = site_tags | split:',' | sort -%}
+
+{%- for tag in tags_list -%}
+    <a href="#{{- tag -}}" class="btn btn-primary tag-btn"><i class="fas fa-tag" aria-hidden="true"></i>&nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})</a>
+{%- endfor -%}
+
+<div id="full-tags-list">
+{%- for tag in tags_list -%}
+    <h2 id="{{- tag -}}" class="linked-section">
+        <i class="fas fa-tag" aria-hidden="true"></i>
+        &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
+    </h2>
+    <div class="post-list">
+        {%- for post in site.tags[tag] -%}
+            <div class="tag-entry">
+                <a href="{{ post.url | relative_url }}">{{- post.title | strip_html -}}</a>
+                <div class="entry-date">
+                    <time datetime="{{- post.date | date_to_xmlschema -}}">{{- post.date | date: date_format -}}</time>
+                </div>
+            </div>
+        {%- endfor -%}
     </div>
+{%- endfor -%}
 </div>
