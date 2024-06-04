@@ -23,7 +23,7 @@ navbar-links:
   Home: "index"
   Docs: "https://openreview.net/"
   Dataset: 
-    - OccupationList: "occupationList"
+    - OccupationList: "page"
     - SimilarOccupationPair: "similarOccupationPair"
   LeaderBoards:
     - Overall: "overall"
