@@ -21,6 +21,7 @@ title: Overall
 |LLaVARLHF|61.05|4.15|27.57|63.04|71.24|
 |RLHFV|67.16|6.96|27.69|72.34|15.09|
 
+
 |model_name|Vbias_ipst_mean|Vbias_bias_mean|Vbias_bias_max|Vbias_acc_mean|Vbias_acc_delta_mean|
 |---|---|---|---|---|---|
 |LLaVA1.5|51.67|1.6|11.34|52.17|95.62|
@@ -38,6 +39,7 @@ title: Overall
 |Shikra|60.23|2.1|14.4|61.66|63.15|
 |LLaVARLHF|62.5|3.01|14.36|64.0|68.89|
 |RLHFV|63.83|10.46|33.05|71.3|19.02|
+
 
 |model_name|Lbias_ipst_mean|Lbias_bias_mean|Lbias_bias_max|Lbias_acc_mean|Lbias_acc_delta_mean|
 |---|---|---|---|---|---|
