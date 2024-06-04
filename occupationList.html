@@ -4,29 +4,28 @@ title: Occupation List
 permalink: /occupationList.html
 ---
 
-<div>
+<div class="text-center">
     Complete list of 92 female-dominated occupations remaining in our dataset after the Stereotyped Occupation Pairs Identification process.
-</div>
-<div id="jobList">
-    <h2>职业列表</h2>
-    <a href="#" onclick="updateTable('developer')">开发者</a>
-    <a href="#" onclick="updateTable('designer')">设计师</a>
-    <a href="#" onclick="updateTable('manager')">经理</a>
-    <!-- 更多职业链接 -->
-</div>
+    <div id="jobList">
+        <h2>职业列表</h2>
+        <a href="#" onclick="updateTable('developer')">开发者</a>
+        <a href="#" onclick="updateTable('designer')">设计师</a>
+        <a href="#" onclick="updateTable('manager')">经理</a>
+        <!-- 更多职业链接 -->
+    </div>
 
-<div id="jobTable">
-    <h2>职业信息表</h2>
-    <table>
-        <tr>
-            <th>姓名</th>
-            <th>职位</th>
-            <th>公司</th>
-        </tr>
-        <!-- 表格内容将根据职业动态更新 -->
-    </table>
+    <div id="jobTable">
+        <h2>职业信息表</h2>
+        <table>
+            <tr>
+                <th>姓名</th>
+                <th>职位</th>
+                <th>公司</th>
+            </tr>
+            <!-- 表格内容将根据职业动态更新 -->
+        </table>
+    </div>
 </div>
-
 <script>
 function updateTable(job) {
     var table = document.querySelector('#jobTable table');
