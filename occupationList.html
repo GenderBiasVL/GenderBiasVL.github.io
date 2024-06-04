@@ -1,0 +1,75 @@
+
+<div id="jobList">
+    <h2>职业列表</h2>
+    <a href="#" onclick="updateTable('developer')">开发者</a>
+    <a href="#" onclick="updateTable('designer')">设计师</a>
+    <a href="#" onclick="updateTable('manager')">经理</a>
+    <!-- 更多职业链接 -->
+</div>
+
+<div id="jobTable">
+    <h2>职业信息表</h2>
+    <table>
+        <tr>
+            <th>姓名</th>
+            <th>职位</th>
+            <th>公司</th>
+        </tr>
+        <!-- 表格内容将根据职业动态更新 -->
+    </table>
+</div>
+
+<script>
+function updateTable(job) {
+    var table = document.querySelector('#jobTable table');
+    // 清除现有表格内容
+    table.innerHTML = '';
+    // 根据职业动态添加表格内容
+    switch(job) {
+        case 'developer':
+            table.innerHTML = `
+                <tr>
+                    <td>张三</td>
+                    <td>前端开发者</td>
+                    <td>某科技公司</td>
+                </tr>
+                <tr>
+                    <td>李四</td>
+                    <td>后端开发者</td>
+                    <td>某创业公司</td>
+                </tr>
+            `;
+            break;
+        case 'designer':
+            table.innerHTML = `
+                <tr>
+                    <td>王五</td>
+                    <td>UI设计师</td>
+                    <td>某设计工作室</td>
+                </tr>
+                <tr>
+                    <td>赵六</td>
+                    <td>UX设计师</td>
+                    <td>某大型企业</td>
+                </tr>
+            `;
+            break;
+        case 'manager':
+            table.innerHTML = `
+                <tr>
+                    <td>孙七</td>
+                    <td>产品经理</td>
+                    <td>某互联网公司</td>
+                </tr>
+                <tr>
+                    <td>周八</td>
+                    <td>项目经理</td>
+                    <td>某跨国公司</td>
+                </tr>
+            `;
+            break;
+        // 更多职业情况
+    }
+}
+</script>
+
