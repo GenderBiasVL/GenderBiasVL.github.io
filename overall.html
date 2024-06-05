@@ -15,6 +15,22 @@ permalink: /overall.html
     }
     th {
         cursor: pointer;
+        position: relative;
+        padding-right: 20px;
+    }
+    th::after {
+        content: ' ';
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 5px solid transparent;
+    }
+    th.asc::after {
+        border-bottom-color: #000;
+    }
+    th.desc::after {
+        border-top-color: #000;
     }
     thead th {
         border-bottom: 2px solid #000;
