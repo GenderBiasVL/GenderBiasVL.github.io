@@ -98,12 +98,14 @@ permalink: /dataset.html
             border-collapse: collapse;
         }
         .nested-table th, .nested-table td {
-            border: 1px solid #000;
+            border: none;
             padding: 8px;
             text-align: left;
         }
-        .nested-table th, .nested-table td img {
-            width: 100%;
-            height: auto;
+        .nested-table tr:nth-child(odd) {
+            background-color: #aef2fa; /* 奇数行背景色 */
+        }
+        .nested-table tr:nth-child(even) {
+            background-color: #ffffff; /* 偶数行背景色 */
         }
 </style>
