@@ -18,12 +18,29 @@ permalink: /overall.html
     }
     .three-line-table thead tr th {
         border-bottom: 2px solid #000; /* 表头底部边框 */
+        cursor: pointer;
+        position: relative;
+        padding-right: 20px;
     }
     .three-line-table tbody tr {
         border-bottom: 1px solid #ddd; /* 行分隔线 */
     }
     .three-line-table tbody tr:last-child {
         border-bottom: 2px solid #000; /* 最后一行的底部边框 */
+    }
+    th::after {
+        content: ' ';
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 5px solid transparent;
+    }
+    th.asc::after {
+        border-bottom-color: #000;
+    }
+    th.desc::after {
+        border-top-color: #000;
     }
 </style>
 <table id="sortableTable" class="three-line-table">
