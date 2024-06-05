@@ -157,6 +157,7 @@ permalink: /overall.html
         </tr>
     </tbody>
 </table>
+
 <script>
     function sortTable(n) {
         var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
@@ -193,5 +194,16 @@ permalink: /overall.html
                 }
             }
         }
+        setSortingIcon(n, dir);
+    }
+
+    function setSortingIcon(columnIndex, direction) {
+        var headers = document.querySelectorAll("#sortableTable th");
+        headers.forEach(function(header, index) {
+            header.classList.remove("asc", "desc");
+            if (index === columnIndex) {
+                header.classList.add(direction);
+            }
+        });
     }
 </script>
