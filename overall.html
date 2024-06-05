@@ -4,42 +4,29 @@ title: 'Overall'
 permalink: /overall.html
 ---
 <style>
-    table {
-        width: 100vw;
-        border-collapse: collapse;
-        text-align: center;
+    .three-line-table {
+        width: 100%;
+        border-collapse: collapse; /* 边框合并 */
     }
-    th, td {
-        padding: 8px;
-        border: 1px solid #ddd;
+    .three-line-table th, .three-line-table td {
+        border: none; /* 清除单元格的默认边框 */
+        padding: 8px; /* 单元格内边距 */
+        text-align: left; /* 文本左对齐 */
     }
-    th {
-        cursor: pointer;
-        position: relative;
-        padding-right: 20px;
+    .three-line-table thead {
+        background-color: #f2f2f2; /* 表头背景色 */
     }
-    th::after {
-        content: ' ';
-        position: absolute;
-        right: 8px;
-        top: 50%;
-        transform: translateY(-50%);
-        border: 5px solid transparent;
+    .three-line-table thead tr th {
+        border-bottom: 2px solid #000; /* 表头底部边框 */
     }
-    th.asc::after {
-        border-bottom-color: #000;
+    .three-line-table tbody tr {
+        border-bottom: 1px solid #ddd; /* 行分隔线 */
     }
-    th.desc::after {
-        border-top-color: #000;
-    }
-    thead th {
-        border-bottom: 2px solid #000;
-    }
-    tbody tr:last-child td {
-        border-bottom: 2px solid #000;
+    .three-line-table tbody tr:last-child {
+        border-bottom: 2px solid #000; /* 最后一行的底部边框 */
     }
 </style>
-<table id="sortableTable">
+<table id="sortableTable" class="three-line-table">
     <thead>
         <tr>
             <th onclick="sortTable(0)">model_name</th>
