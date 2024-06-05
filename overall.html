@@ -487,11 +487,11 @@ permalink: /overall.html
                 }
             }
         }
-        setSortingIcon(n, dir);
+        setSortingIcon(tableId, n, dir);
     }
 
-    function setSortingIcon(columnIndex, direction) {
-        var headers = document.querySelectorAll("#sortableTable th");
+    function setSortingIcon(tableId, columnIndex, direction) {
+        var headers = document.querySelectorAll("#" + tableId + " th");
         headers.forEach(function(header, index) {
             header.classList.remove("asc", "desc");
             if (index === columnIndex) {
