@@ -46,15 +46,15 @@ permalink: /overall.html
         color: #007bff; /* 标题悬停时的颜色变化 */
     }
 </style>
-<table id="sortableTable" class="three-line-table">
+<table id="VLTable" class="three-line-table">
     <thead>
         <tr>
-            <th onclick="sortTable(0)">model_name</th>
-            <th onclick="sortTable(1)">VLbias_ipst_mean</th>
-            <th onclick="sortTable(2)">VLbias_bias_mean</th>
-            <th onclick="sortTable(3)">VLbias_bias_max</th>
-            <th onclick="sortTable(4)">VLbias_acc_mean</th>
-            <th onclick="sortTable(5)">VLbias_acc_delta_mean</th>
+            <th onclick="sortTable('VLTable', 0)">model_name</th>
+            <th onclick="sortTable('VLTable', 1)">VLbias_ipst_mean</th>
+            <th onclick="sortTable('VLTable', 2)">VLbias_bias_mean</th>
+            <th onclick="sortTable('VLTable', 3)">VLbias_bias_max</th>
+            <th onclick="sortTable('VLTable', 4)">VLbias_acc_mean</th>
+            <th onclick="sortTable('VLTable', 5)">VLbias_acc_delta_mean</th>
         </tr>
     </thead>
     <tbody>
@@ -181,10 +181,280 @@ permalink: /overall.html
     </tbody>
 </table>
 
+<table id="VTable" class="three-line-table">
+    <thead>
+        <tr>
+            <th onclick="sortTable('VTable', 0)">model_name</th>
+            <th onclick="sortTable('VTable', 1)">Vbias_ipst_mean</th>
+            <th onclick="sortTable('VTable', 2)">Vbias_bias_mean</th>
+            <th onclick="sortTable('VTable', 3)">Vbias_bias_max</th>
+            <th onclick="sortTable('VTable', 4)">Vbias_acc_mean</th>
+            <th onclick="sortTable('VTable', 5)">Vbias_acc_delta_mean</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>LLaVA1.5</td>
+            <td>51.67</td>
+            <td>1.6</td>
+            <td>11.34</td>
+            <td>52.17</td>
+            <td>95.62</td>
+        </tr>
+        <tr>
+            <td>LLaVA1.5-13b</td>
+            <td>58.85</td>
+            <td>2.55</td>
+            <td>14.44</td>
+            <td>59.9</td>
+            <td>79.27</td>
+        </tr>
+        <tr>
+            <td>LLaVA1.6-13b</td>
+            <td>66.65</td>
+            <td>3.36</td>
+            <td>17.55</td>
+            <td>68.79</td>
+            <td>56.72</td>
+        </tr>
+        <tr>
+            <td>MiniGPT-4-v2</td>
+            <td>55.3</td>
+            <td>1.58</td>
+            <td>7.43</td>
+            <td>56.14</td>
+            <td>83.97</td>
+        </tr>
+        <tr>
+            <td>mPLUG-Owl2</td>
+            <td>73.26</td>
+            <td>5.77</td>
+            <td>31.5</td>
+            <td>77.68</td>
+            <td>9.07</td>
+        </tr>
+        <tr>
+            <td>LLaMA-Adapter-v2</td>
+            <td>55.16</td>
+            <td>0.42</td>
+            <td>6.78</td>
+            <td>55.4</td>
+            <td>86.39</td>
+        </tr>
+        <tr>
+            <td>InstructBLIP</td>
+            <td>75.06</td>
+            <td>3.23</td>
+            <td>18.02</td>
+            <td>77.61</td>
+            <td>13.6</td>
+        </tr>
+        <tr>
+            <td>Otter</td>
+            <td>62.54</td>
+            <td>1.48</td>
+            <td>8.46</td>
+            <td>63.56</td>
+            <td>60.38</td>
+        </tr>
+        <tr>
+            <td>LAMM</td>
+            <td>57.54</td>
+            <td>0.62</td>
+            <td>4.33</td>
+            <td>57.94</td>
+            <td>77.85</td>
+        </tr>
+        <tr>
+            <td>Kosmos2</td>
+            <td>48.95</td>
+            <td>0.21</td>
+            <td>0.95</td>
+            <td>49.53</td>
+            <td>72.69</td>
+        </tr>
+        <tr>
+            <td>QwenVL</td>
+            <td>71.07</td>
+            <td>4.54</td>
+            <td>29.88</td>
+            <td>74.36</td>
+            <td>23.99</td>
+        </tr>
+        <tr>
+            <td>InternLMXComposer</td>
+            <td>72.53</td>
+            <td>7.24</td>
+            <td>37.8</td>
+            <td>78.05</td>
+            <td>8.09</td>
+        </tr>
+        <tr>
+            <td>Shikra</td>
+            <td>60.23</td>
+            <td>2.1</td>
+            <td>14.4</td>
+            <td>61.66</td>
+            <td>63.15</td>
+        </tr>
+        <tr>
+            <td>LLaVARLHF</td>
+            <td>62.5</td>
+            <td>3.01</td>
+            <td>14.36</td>
+            <td>64.0</td>
+            <td>68.89</td>
+        </tr>
+        <tr>
+            <td>RLHFV</td>
+            <td>63.83</td>
+            <td>10.46</td>
+            <td>33.05</td>
+            <td>71.3</td>
+            <td>19.02</td>
+        </tr>
+    </tbody>
+</table>
+
+<table id="LTable" class="three-line-table">
+    <thead>
+        <tr>
+            <th onclick="sortTable('LTable', 0)">model_name</th>
+            <th onclick="sortTable('LTable', 1)">VLbias_ipst_mean</th>
+            <th onclick="sortTable('LTable', 2)">VLbias_bias_mean</th>
+            <th onclick="sortTable('LTable', 3)">VLbias_bias_max</th>
+            <th onclick="sortTable('LTable', 4)">VLbias_acc_mean</th>
+            <th onclick="sortTable('LTable', 5)">VLbias_acc_delta_mean</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>LLaVA1.5</td>
+            <td>50.86</td>
+            <td>1.25</td>
+            <td>12.08</td>
+            <td>51.27</td>
+            <td>97.43</td>
+          </tr>
+          <tr>
+            <td>LLaVA1.5-13b</td>
+            <td>55.86</td>
+            <td>1.65</td>
+            <td>14.6</td>
+            <td>56.41</td>
+            <td>86.85</td>
+          </tr>
+          <tr>
+            <td>LLaVA1.6-13b</td>
+            <td>62.52</td>
+            <td>2.37</td>
+            <td>17.35</td>
+            <td>63.93</td>
+            <td>69.94</td>
+          </tr>
+          <tr>
+            <td>MiniGPT-4-v2</td>
+            <td>54.84</td>
+            <td>2.05</td>
+            <td>13.48</td>
+            <td>55.95</td>
+            <td>84.63</td>
+          </tr>
+          <tr>
+            <td>mPLUG-Owl2</td>
+            <td>70.37</td>
+            <td>4.75</td>
+            <td>22.58</td>
+            <td>73.92</td>
+            <td>11.45</td>
+          </tr>
+          <tr>
+            <td>LLaMA-Adapter-v2</td>
+            <td>51.72</td>
+            <td>0.34</td>
+            <td>2.22</td>
+            <td>51.91</td>
+            <td>95.45</td>
+          </tr>
+          <tr>
+            <td>InstructBLIP</td>
+            <td>71.83</td>
+            <td>3.41</td>
+            <td>16.94</td>
+            <td>74.42</td>
+            <td>19.54</td>
+          </tr>
+          <tr>
+            <td>Otter</td>
+            <td>59.71</td>
+            <td>0.93</td>
+            <td>4.65</td>
+            <td>60.36</td>
+            <td>68.99</td>
+          </tr>
+          <tr>
+            <td>LAMM</td>
+            <td>56.13</td>
+            <td>0.91</td>
+            <td>3.72</td>
+            <td>56.67</td>
+            <td>80.5</td>
+          </tr>
+          <tr>
+            <td>Kosmos2</td>
+            <td>49.94</td>
+            <td>0.03</td>
+            <td>0.14</td>
+            <td>49.99</td>
+            <td>74.55</td>
+          </tr>
+          <tr>
+            <td>QwenVL</td>
+            <td>70.18</td>
+            <td>2.96</td>
+            <td>19.94</td>
+            <td>72.35</td>
+            <td>18.48</td>
+          </tr>
+          <tr>
+            <td>InternLMXComposer</td>
+            <td>71.83</td>
+            <td>5.38</td>
+            <td>37.23</td>
+            <td>75.8</td>
+            <td>9.23</td>
+          </tr>
+          <tr>
+            <td>Shikra</td>
+            <td>59.69</td>
+            <td>3.25</td>
+            <td>13.86</td>
+            <td>61.8</td>
+            <td>56.65</td>
+          </tr>
+          <tr>
+            <td>LLaVARLHF</td>
+            <td>59.7</td>
+            <td>3.61</td>
+            <td>34.59</td>
+            <td>61.34</td>
+            <td>75.23</td>
+          </tr>
+          <tr>
+            <td>RLHFV</td>
+            <td>64.08</td>
+            <td>7.36</td>
+            <td>33.69</td>
+            <td>69.25</td>
+            <td>27.68</td>
+          </tr>
+    </tbody>
+</table>
+
 <script>
-    function sortTable(n) {
+    function sortTable(tableId, n) {
         var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-        table = document.getElementById("sortableTable");
+        table = document.getElementById(tableId);
         switching = true;
         dir = "asc"; 
         while (switching) {
