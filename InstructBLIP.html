@@ -1,0 +1,94 @@
+---
+layout: default
+title: 'InstructBLIP'
+permalink: /InstructBLIP.html
+---
+
+<div class="buttons">
+    <button onclick="changeTable('option1')">Option 1</button>
+    <button onclick="changeTable('option2')">Option 2</button>
+    <button onclick="changeTable('option3')">Option 3</button>
+</div>
+
+<table id="contentTable">
+    <!-- 表格内容会在这里更新 -->
+</table>
+
+<script>
+    function changeTable(option) {
+        const table = document.getElementById('contentTable');
+        let content = '';
+
+        if (option === 'option1') {
+            content = `
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                </tr>
+                <tr>
+                    <td>Option 1 - Data 1</td>
+                    <td>Option 1 - Data 2</td>
+                </tr>
+                <tr>
+                    <td>Option 1 - Data 3</td>
+                    <td>Option 1 - Data 4</td>
+                </tr>
+            `;
+        } else if (option === 'option2') {
+            content = `
+                <tr>
+                    <th>Header A</th>
+                    <th>Header B</th>
+                </tr>
+                <tr>
+                    <td>Option 2 - Data A</td>
+                    <td>Option 2 - Data B</td>
+                </tr>
+                <tr>
+                    <td>Option 2 - Data C</td>
+                    <td>Option 2 - Data D</td>
+                </tr>
+            `;
+        } else if (option === 'option3') {
+            content = `
+                <tr>
+                    <th>Header X</th>
+                    <th>Header Y</th>
+                </tr>
+                <tr>
+                    <td>Option 3 - Data X</td>
+                    <td>Option 3 - Data Y</td>
+                </tr>
+                <tr>
+                    <td>Option 3 - Data Z</td>
+                    <td>Option 3 - Data W</td>
+                </tr>
+            `;
+        }
+
+        table.innerHTML = content;
+    }
+
+    // 初始化表格内容
+    changeTable('option1');
+</script>
+
+<style>
+    .buttons {
+        margin-bottom: 20px;
+    }
+    .buttons button {
+        margin-right: 10px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    table, th, td {
+        border: 1px solid black;
+    }
+    th, td {
+        padding: 10px;
+        text-align: left;
+    }
+</style>

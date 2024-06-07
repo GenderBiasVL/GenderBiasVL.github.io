@@ -27,9 +27,9 @@ navbar-links:
     - Open-source LVLMs: "open_sourceLVLMs"
     - Close-source LVLMs: "close_sourceLVLMs"
   Details:
-    - LLaVA1.5: "LLaVA1.5"
-    - LLaVA1.5-13b: "LLaVA1.5-13b"
-    - LLaVA1.6-13b: "LLaVA1.6-13b"
+    - LLaVA1.5: "LLaVA15"
+    - LLaVA1.5-13b: "LLaVA15-13b"
+    - LLaVA1.6-13b: "LLaVA16-13b"
     - MiniGPT-4-v2: "MiniGPT-4-v2"
     - mPLUG-Owl2: "mPLUG-Owl2"
     - LLaMA-Adapter-v2: "LLaMA-Adapter-v2"
