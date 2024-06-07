@@ -15,11 +15,11 @@ permalink: /InstructBLIP.html
 </table>
 
 <script>
+    let currentOption = 'VLbias';
+    let sortDirection = 'asc';
+    let sortColumnIndex = 0;
     function changeTable(option) {
         const table = document.getElementById('contentTable');
-        let currentOption = 'VLbias';
-        let sortDirection = 'asc';
-        let sortColumnIndex = 0;
 
         if (option === 'VLbias') {
             content = `
