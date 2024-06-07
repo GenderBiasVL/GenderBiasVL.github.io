@@ -10263,7 +10263,10 @@ permalink: /InstructBLIP.html
         }
 
         table.innerHTML = content;
+        sortDirection = 'asc';
+        sortColumnIndex = 0;
         setSortingIcon(sortColumnIndex, sortDirection);
+        MathJax.typeset(); // 重新渲染公式
     }
     function sortTable(columnIndex) {
         const table = document.getElementById('contentTable');
