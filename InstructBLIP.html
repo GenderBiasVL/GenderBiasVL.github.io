@@ -5,9 +5,9 @@ permalink: /InstructBLIP.html
 ---
 
 <div class="buttons">
-    <button onclick="changeTable('option1')">Option 1</button>
-    <button onclick="changeTable('option2')">Option 2</button>
-    <button onclick="changeTable('option3')">Option 3</button>
+    <button onclick="changeTable('VLbias')">VLbias</button>
+    <button onclick="changeTable('Vbias')">Vbias</button>
+    <button onclick="changeTable('Lbias')">Lbias</button>
 </div>
 
 <table id="contentTable">
@@ -19,7 +19,7 @@ permalink: /InstructBLIP.html
         const table = document.getElementById('contentTable');
         let content = '';
 
-        if (option === 'option1') {
+        if (option === 'VLbias') {
             content = `
                 <tr>
                     <th>Header 1</th>
@@ -34,7 +34,7 @@ permalink: /InstructBLIP.html
                     <td>Option 1 - Data 4</td>
                 </tr>
             `;
-        } else if (option === 'option2') {
+        } else if (option === 'Vbias') {
             content = `
                 <tr>
                     <th>Header A</th>
@@ -49,7 +49,7 @@ permalink: /InstructBLIP.html
                     <td>Option 2 - Data D</td>
                 </tr>
             `;
-        } else if (option === 'option3') {
+        } else if (option === 'Lbias') {
             content = `
                 <tr>
                     <th>Header X</th>
@@ -70,7 +70,7 @@ permalink: /InstructBLIP.html
     }
 
     // 初始化表格内容
-    changeTable('option1');
+    changeTable('VLbias');
 </script>
 
 <style>
