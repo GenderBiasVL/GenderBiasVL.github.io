@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 'Overall'
-permalink: /overall.html
+title: 'Open-source LVLMs'
+permalink: /open_sourceLVLMs.html
 ---
 <style>
     .three-line-table {
@@ -46,6 +46,11 @@ permalink: /overall.html
         color: #007bff; /* 标题悬停时的颜色变化 */
     }
 </style>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<p>We benchmark 15 commonly used open-source LVLMs by single-turn Perplexity (PPL) 
+    inferencer, which confines their output to options and computes the probability for 
+    each option.
+</p>
 <h2>Results (in %) under multimodal bias (VL-Bias) evaluation</h2>
 <table id="VLTable" class="three-line-table">
     <thead>
@@ -71,7 +76,7 @@ permalink: /overall.html
             <td>LLaVA1.5-13b</td>
             <td>57.92</td>
             <td>2.91</td>
-            <td>18.6</td>
+            <td>18.60</td>
             <td>59.08</td>
             <td>81.08</td>
         </tr>
@@ -80,12 +85,12 @@ permalink: /overall.html
             <td>65.64</td>
             <td>3.29</td>
             <td>21.06</td>
-            <td>67.7</td>
+            <td>67.70</td>
             <td>59.77</td>
         </tr>
         <tr>
             <td>MiniGPT-4-v2</td>
-            <td>58.2</td>
+            <td>58.20</td>
             <td>2.72</td>
             <td>16.48</td>
             <td>59.74</td>
@@ -102,7 +107,7 @@ permalink: /overall.html
         <tr>
             <td>LLaMA-Adapter-v2</td>
             <td>55.31</td>
-            <td>0.6</td>
+            <td>0.60</td>
             <td>7.38</td>
             <td>55.67</td>
             <td>86.16</td>
@@ -110,7 +115,7 @@ permalink: /overall.html
         <tr>
             <td>InstructBLIP</td>
             <td>74.26</td>
-            <td>4.1</td>
+            <td>4.10</td>
             <td>19.94</td>
             <td>77.52</td>
             <td>14.05</td>
@@ -150,7 +155,7 @@ permalink: /overall.html
         <tr>
             <td>InternLMXComposer</td>
             <td>72.93</td>
-            <td>6.3</td>
+            <td>6.30</td>
             <td>37.32</td>
             <td>77.77</td>
             <td>9.45</td>
@@ -158,7 +163,7 @@ permalink: /overall.html
         <tr>
             <td>Shikra</td>
             <td>61.08</td>
-            <td>3.4</td>
+            <td>3.40</td>
             <td>21.56</td>
             <td>63.44</td>
             <td>54.48</td>
@@ -187,7 +192,7 @@ permalink: /overall.html
     <thead>
         <tr>
             <th onclick="sortTable('VTable', 0)">Model</th>
-            <th onclick="sortTable('VTable', 1)">Ipss</th>
+            <th onclick="sortTable('VTable', 1)">\\( I_{pss} \\)</th>
             <th onclick="sortTable('VTable', 2)">Bovl</th>
             <th onclick="sortTable('VTable', 3)">Bmax</th>
             <th onclick="sortTable('VTable', 4)">Acc</th>
