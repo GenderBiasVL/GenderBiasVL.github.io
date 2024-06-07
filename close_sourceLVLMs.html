@@ -46,13 +46,17 @@ permalink: /close_sourceLVLMs.html
         color: #007bff; /* 标题悬停时的颜色变化 */
     }
 </style>
-
+<p>We evaluate state-of-the-art commercial LVLMs (GPT-4o and Gemini-Pro),
+    obtaining answers through their official APIs. Here are the results of 
+    commercial LVLMs and open-source LVLMs on Top-10 biased pairs (measured
+    by bias based on outcome difference).
+</p>
 <h2>Results (in %) under multimodal bias (VL-Bias) evaluation</h2>
 <table id="VLTable" class="three-line-table">
     <thead>
         <tr>
             <th onclick="sortTable('VLTable', 0)">Model</th>
-            <th onclick="sortTable('VLTable', 1)">I<sub>pss</sub></th>
+            <th onclick="sortTable('VLTable', 1)">$$ I_{pss} $$</th>
             <th onclick="sortTable('VLTable', 2)">Bovl</th>
             <th onclick="sortTable('VLTable', 3)">Bmax</th>
             <th onclick="sortTable('VLTable', 4)">Acc</th>
