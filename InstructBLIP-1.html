@@ -1,0 +1,45 @@
+---
+layout: default
+title: 'InstructBLIP-1'
+permalink: /InstructBLIP-1.html
+---
+<style>
+    .buttons {
+        margin-bottom: 20px;
+    }
+    .buttons button {
+        margin-right: 10px;
+    }
+    .image-container img {
+        display: none;
+        max-width: 100%;
+        height: auto;
+    }
+    .image-container img.active {
+        display: block;
+    }
+</style>
+<div class="buttons">
+    <button onclick="showImage('VLbias')">VLbias</button>
+    <button onclick="showImage('Vbias')">Vbias</button>
+    <button onclick="showImage('Lbias')">Lbias</button>
+</div>
+
+<div class="image-container">
+    <img id="VLbias" src="{{ 'assets/img/bias_fig/InstructBLIP/png/Q2_InstructBLIP_VLbias.png' | relative_url }}" alt="Image 1">
+    <img id="Vbias" src="{{ 'assets/img/bias_fig/InstructBLIP/png/Q2_InstructBLIP_Vbias.png' | relative_url }}" alt="Image 2">
+    <img id="Lbias" src="{{ 'assets/img/bias_fig/InstructBLIP/png/Q2_InstructBLIP_Lbias.png' | relative_url }}" alt="Image 3">
+</div>
+
+<script>
+    function showImage(imageId) {
+        const images = document.querySelectorAll('.image-container img');
+        images.forEach(image => {
+            image.classList.remove('active');
+        });
+        document.getElementById(imageId).classList.add('active');
+    }
+
+    // 默认显示第一张图片
+    showImage('VLbias');
+</script>
