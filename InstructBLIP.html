@@ -10,7 +10,7 @@ permalink: /InstructBLIP.html
     <button onclick="changeTable('Lbias')">Lbias</button>
 </div>
 
-<table id="contentTable">
+<table id="contentTable" class="three-line-table">
     <!-- 表格内容会在这里更新 -->
 </table>
 
@@ -22,11 +22,11 @@ permalink: /InstructBLIP.html
         if (option === 'VLbias') {
             content = `
                 <tr>
-                    <th><th>$$(occ_{m}, $$occ_{f})$$</th></th>
-                    <th>$$Ipss$$</th>
-                    <th>$$B_{pair}$$</th>
-                    <th>$$Acc$$</th>
-                    <th>$$\\Delta Acc$$</th>
+                    <th onclick="sortTable(0)">$$(occ_{m}, $$occ_{f})$$</th>
+                    <th onclick="sortTable(1)">$$Ipss$$</th>
+                    <th onclick="sortTable(2)">$$B_{pair}$$</th>
+                    <th onclick="sortTable(3)">$$Acc$$</th>
+                    <th onclick="sortTable(4)">$$\\Delta Acc$$</th>
                 </tr>
                 <tr>
                     <td>(Dentist, Dental hygienist)</td>
@@ -10262,7 +10262,37 @@ permalink: /InstructBLIP.html
 
         table.innerHTML = content;
     }
+    function sortTable(columnIndex) {
+        const table = document.getElementById('contentTable');
+        const rows = Array.from(table.rows).slice(1);
+        const isAsc = sortDirection === 'asc';
 
+        rows.sort((rowA, rowB) => {
+            const cellA = rowA.cells[columnIndex].innerText;
+            const cellB = rowB.cells[columnIndex].innerText;
+
+            if (cellA < cellB) return isAsc ? -1 : 1;
+            if (cellA > cellB) return isAsc ? 1 : -1;
+            return 0;
+        });
+
+        sortDirection = isAsc ? 'desc' : 'asc';
+        sortColumnIndex = columnIndex;
+        setSortingIcon(columnIndex, sortDirection);
+
+        rows.forEach(row => table.appendChild(row));
+    }
+
+
+    function setSortingIcon(columnIndex, direction) {
+        var headers = document.querySelectorAll("#contentTable th");
+        headers.forEach(function(header, index) {
+            header.classList.remove("asc", "desc");
+            if (index === columnIndex) {
+                header.classList.add(direction);
+            }
+        });
+    }
     // 初始化表格内容
     changeTable('VLbias');
 </script>
@@ -10274,15 +10304,45 @@ permalink: /InstructBLIP.html
     .buttons button {
         margin-right: 10px;
     }
-    table {
+    .three-line-table {
         width: 100%;
-        border-collapse: collapse;
+        border-collapse: collapse; /* 边框合并 */
     }
-    table, th, td {
-        border: 1px solid black;
+    .three-line-table th, .three-line-table td {
+        border: none; /* 清除单元格的默认边框 */
+        padding: 8px; /* 单元格内边距 */
+        text-align: left; /* 文本左对齐 */
     }
-    th, td {
-        padding: 10px;
-        text-align: left;
+    .three-line-table thead {
+        background-color: #f2f2f2; /* 表头背景色 */
+    }
+    .three-line-table thead tr th {
+        border-bottom: 2px solid #000; /* 表头底部边框 */
+        cursor: pointer;
+        position: relative;
+        padding-right: 20px;
+    }
+    .three-line-table tbody tr {
+        border-bottom: 1px solid #ddd; /* 行分隔线 */
+    }
+    .three-line-table tbody tr:last-child {
+        border-bottom: 2px solid #000; /* 最后一行的底部边框 */
+    }
+    th::after {
+        content: ' ';
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 5px solid transparent;
+    }
+    th.asc::after {
+        border-bottom-color: #000;
+    }
+    th.desc::after {
+        border-top-color: #000;
+    }
+    th:hover {
+        color: #007bff; /* 标题悬停时的颜色变化 */
     }
 </style>
