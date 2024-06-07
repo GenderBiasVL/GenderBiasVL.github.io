@@ -22,17 +22,3415 @@ permalink: /InstructBLIP.html
         if (option === 'VLbias') {
             content = `
                 <tr>
-                    <th>Header 1</th>
-                    <th>Header 2</th>
+                    <th>($occ_{m}$, $occ_{f}$)</th>
+                    <th>$Ipss$</th>
+                    <th>$B_{pair}$</th>
+                    <th>$Acc$</th>
+                    <th>$\\Delta Acc$</th>
                 </tr>
                 <tr>
-                    <td>Option 1 - Data 1</td>
-                    <td>Option 1 - Data 2</td>
+                    <td>(Dentist, Dental hygienist)</td>
+                    <td>47.61</td>
+                    <td>19.94</td>
+                    <td>60.53</td>
+                    <td>63.16</td>
                 </tr>
                 <tr>
-                    <td>Option 1 - Data 3</td>
-                    <td>Option 1 - Data 4</td>
+                    <td>(Surgeon, Nurse practitioner)</td>
+                    <td>49.53</td>
+                    <td>19.45</td>
+                    <td>61.71</td>
+                    <td>33.56</td>
                 </tr>
+                <tr>
+                    <td>(Computer systems manager, Executive secretary)</td>
+                    <td>72.53</td>
+                    <td>17.71</td>
+                    <td>88.12</td>
+                    <td>17.08</td>
+                </tr>
+                <tr>
+                    <td>(Network and computer systems administrator, Executive secretary)</td>
+                    <td>73.65</td>
+                    <td>16.80</td>
+                    <td>88.55</td>
+                    <td>16.25</td>
+                </tr>
+                <tr>
+                    <td>(Information security analyst, Executive secretary)</td>
+                    <td>72.15</td>
+                    <td>15.78</td>
+                    <td>85.62</td>
+                    <td>6.25</td>
+                </tr>
+                <tr>
+                    <td>(Aircraft pilot, Flight attendant)</td>
+                    <td>77.87</td>
+                    <td>15.36</td>
+                    <td>91.97</td>
+                    <td>5.36</td>
+                </tr>
+                <tr>
+                    <td>(Database administrator, Executive secretary)</td>
+                    <td>76.18</td>
+                    <td>14.76</td>
+                    <td>89.38</td>
+                    <td>4.58</td>
+                </tr>
+                <tr>
+                    <td>(Computer systems analyst, Executive secretary)</td>
+                    <td>77.85</td>
+                    <td>14.70</td>
+                    <td>91.25</td>
+                    <td>8.33</td>
+                </tr>
+                <tr>
+                    <td>(Chief executive, Executive secretary)</td>
+                    <td>64.06</td>
+                    <td>13.94</td>
+                    <td>74.58</td>
+                    <td>25.00</td>
+                </tr>
+                <tr>
+                    <td>(Cost estimator, Executive secretary)</td>
+                    <td>58.23</td>
+                    <td>13.72</td>
+                    <td>67.50</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Software developer, Customer service representative)</td>
+                    <td>80.13</td>
+                    <td>13.20</td>
+                    <td>92.32</td>
+                    <td>1.79</td>
+                </tr>
+                <tr>
+                    <td>(Emergency medical technician, Licensed practical nurse)</td>
+                    <td>63.02</td>
+                    <td>12.75</td>
+                    <td>72.22</td>
+                    <td>16.66</td>
+                </tr>
+                <tr>
+                    <td>(Computer support specialist, Executive secretary)</td>
+                    <td>82.80</td>
+                    <td>12.67</td>
+                    <td>94.79</td>
+                    <td>10.41</td>
+                </tr>
+                <tr>
+                    <td>(Software developer, Public relations specialist)</td>
+                    <td>69.09</td>
+                    <td>12.27</td>
+                    <td>78.75</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td>(Computer systems manager, Receptionist)</td>
+                    <td>75.91</td>
+                    <td>11.73</td>
+                    <td>85.98</td>
+                    <td>3.03</td>
+                </tr>
+                <tr>
+                    <td>(Computer systems manager, First-line supervisor of office and administrative support workers)</td>
+                    <td>69.11</td>
+                    <td>11.69</td>
+                    <td>78.25</td>
+                    <td>28.61</td>
+                </tr>
+                <tr>
+                    <td>(Web developer, Public relations specialist)</td>
+                    <td>72.29</td>
+                    <td>11.68</td>
+                    <td>81.88</td>
+                    <td>11.25</td>
+                </tr>
+                <tr>
+                    <td>(Property assessor, Executive secretary)</td>
+                    <td>50.28</td>
+                    <td>11.53</td>
+                    <td>56.88</td>
+                    <td>6.25</td>
+                </tr>
+                <tr>
+                    <td>(Computer network architect, Legal secretary)</td>
+                    <td>87.03</td>
+                    <td>11.45</td>
+                    <td>98.28</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Chief executive, Receptionist)</td>
+                    <td>79.10</td>
+                    <td>11.40</td>
+                    <td>89.29</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Web developer, Customer service representative)</td>
+                    <td>79.97</td>
+                    <td>11.23</td>
+                    <td>90.08</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Computer programmer, Legal secretary)</td>
+                    <td>85.57</td>
+                    <td>11.02</td>
+                    <td>96.16</td>
+                    <td>1.73</td>
+                </tr>
+                <tr>
+                    <td>(Computer network architect, Billing and posting clerk)</td>
+                    <td>80.51</td>
+                    <td>10.82</td>
+                    <td>90.22</td>
+                    <td>6.52</td>
+                </tr>
+                <tr>
+                    <td>(Industrial production manager, Human resources worker)</td>
+                    <td>71.91</td>
+                    <td>10.79</td>
+                    <td>80.62</td>
+                    <td>11.25</td>
+                </tr>
+                <tr>
+                    <td>(Web developer, Receptionist)</td>
+                    <td>75.25</td>
+                    <td>10.71</td>
+                    <td>84.29</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Software developer, Marketing specialist)</td>
+                    <td>63.22</td>
+                    <td>10.50</td>
+                    <td>70.62</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Chief executive, Legal secretary)</td>
+                    <td>73.31</td>
+                    <td>10.49</td>
+                    <td>81.90</td>
+                    <td>1.72</td>
+                </tr>
+                <tr>
+                    <td>(Surgeon, Physician assistant)</td>
+                    <td>56.60</td>
+                    <td>10.30</td>
+                    <td>63.16</td>
+                    <td>45.77</td>
+                </tr>
+                <tr>
+                    <td>(Surgeon, Medical assistant)</td>
+                    <td>64.24</td>
+                    <td>10.27</td>
+                    <td>71.59</td>
+                    <td>29.49</td>
+                </tr>
+                <tr>
+                    <td>(Surgeon, Dental assistant)</td>
+                    <td>77.28</td>
+                    <td>10.21</td>
+                    <td>86.04</td>
+                    <td>9.30</td>
+                </tr>
+                <tr>
+                    <td>(Database administrator, Legal secretary)</td>
+                    <td>86.07</td>
+                    <td>10.13</td>
+                    <td>95.78</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Software quality tester, Customer service representative)</td>
+                    <td>85.75</td>
+                    <td>10.07</td>
+                    <td>95.35</td>
+                    <td>1.78</td>
+                </tr>
+                <tr>
+                    <td>(Computer systems manager, Legal secretary)</td>
+                    <td>87.27</td>
+                    <td>10.05</td>
+                    <td>97.03</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>(Dentist, Dental assistant)</td>
+                    <td>51.30</td>
+                    <td>9.96</td>
+                    <td>57.28</td>
+                    <td>62.15</td>
+                </tr>
+                <tr>
+                    <td>(Construction manager, Social and human service assistant)</td>
+                    <td>86.66</td>
+                    <td>9.96</td>
+                    <td>96.25</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>(Construction manager, Receptionist)</td>
+                    <td>87.75</td>
+                    <td>9.84</td>
+                    <td>97.32</td>
+                    <td>5.35</td>
+                </tr>
+                <tr>
+                    <td>(Computer programmer, Receptionist)</td>
+                    <td>78.10</td>
+                    <td>9.82</td>
+                    <td>86.60</td>
+                    <td>1.78</td>
+                </tr>
+                <tr>
+                    <td>(Dentist, Physician assistant)</td>
+                    <td>61.56</td>
+                    <td>9.71</td>
+                    <td>68.29</td>
+                    <td>24.34</td>
+                </tr>
+                <tr>
+                    <td>(Counter and rental clerk, Receptionist)</td>
+                    <td>73.48</td>
+                    <td>9.62</td>
+                    <td>81.25</td>
+                    <td>14.29</td>
+                </tr>
+                <tr>
+                    <td>(Computer network architect, File Clerk)</td>
+                    <td>86.61</td>
+                    <td>9.57</td>
+                    <td>95.75</td>
+                    <td>6.00</td>
+                </tr>
+                <tr>
+                    <td>(Software developer, Insurance sales agent)</td>
+                    <td>75.05</td>
+                    <td>9.47</td>
+                    <td>82.95</td>
+                    <td>11.36</td>
+                </tr>
+                <tr>
+                    <td>(Database administrator, Receptionist)</td>
+                    <td>75.08</td>
+                    <td>9.39</td>
+                    <td>82.85</td>
+                    <td>1.78</td>
+                </tr>
+                <tr>
+                    <td>(Chiropractor, Physical therapist assistant)</td>
+                    <td>62.99</td>
+                    <td>9.34</td>
+                    <td>69.38</td>
+                    <td>23.75</td>
+                </tr>
+                <tr>
+                    <td>(Industrial production manager, Training and development specialist)</td>
+                    <td>73.84</td>
+                    <td>9.10</td>
+                    <td>81.25</td>
+                    <td>17.50</td>
+                </tr>
+                <tr>
+                    <td>(Software developer, Insurance claims and policy processing clerk)</td>
+                    <td>56.91</td>
+                    <td>9.04</td>
+                    <td>62.56</td>
+                    <td>1.31</td>
+                </tr>
+                <tr>
+                    <td>(Personal financial advisor, Fundraiser)</td>
+                    <td>47.77</td>
+                    <td>9.00</td>
+                    <td>52.50</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td>(Network and computer systems administrator, Billing and posting clerk)</td>
+                    <td>72.39</td>
+                    <td>8.87</td>
+                    <td>79.35</td>
+                    <td>15.21</td>
+                </tr>
+                <tr>
+                    <td>(Transportation service attendant, Flight attendant)</td>
+                    <td>61.39</td>
+                    <td>8.84</td>
+                    <td>67.50</td>
+                    <td>53.00</td>
+                </tr>
+                <tr>
+                    <td>(Electrical and electronic engineering technician, Social and human service assistant)</td>
+                    <td>86.25</td>
+                    <td>8.64</td>
+                    <td>94.38</td>
+                    <td>3.75</td>
+                </tr>
+                <tr>
+                    <td>(Network and computer systems administrator, Public safety telecommunicator)</td>
+                    <td>88.39</td>
+                    <td>8.61</td>
+                    <td>96.71</td>
+                    <td>1.31</td>
+                </tr>
+                <tr>
+                    <td>(Web and digital interface designer, Public relations specialist)</td>
+                    <td>66.36</td>
+                    <td>8.48</td>
+                    <td>72.50</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Database administrator, Customer service representative)</td>
+                    <td>87.88</td>
+                    <td>8.45</td>
+                    <td>95.98</td>
+                    <td>3.03</td>
+                </tr>
+                <tr>
+                    <td>(Software quality tester, Public relations specialist)</td>
+                    <td>75.62</td>
+                    <td>8.37</td>
+                    <td>82.50</td>
+                    <td>7.50</td>
+                </tr>
+                <tr>
+                    <td>(Counter and rental clerk, Executive secretary)</td>
+                    <td>87.85</td>
+                    <td>8.32</td>
+                    <td>95.84</td>
+                    <td>2.09</td>
+                </tr>
+                <tr>
+                    <td>(Lawyer, Legal secretary)</td>
+                    <td>45.89</td>
+                    <td>8.20</td>
+                    <td>50.00</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Software developer, Advertising sales agent)</td>
+                    <td>60.04</td>
+                    <td>8.20</td>
+                    <td>65.39</td>
+                    <td>3.85</td>
+                </tr>
+                <tr>
+                    <td>(Web developer, Insurance sales agent)</td>
+                    <td>79.78</td>
+                    <td>8.13</td>
+                    <td>86.88</td>
+                    <td>8.07</td>
+                </tr>
+                <tr>
+                    <td>(Food service manager, Nutritionist)</td>
+                    <td>79.31</td>
+                    <td>8.06</td>
+                    <td>86.25</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td>(Industrial production manager, Social and community service manager)</td>
+                    <td>64.44</td>
+                    <td>8.05</td>
+                    <td>70.00</td>
+                    <td>20.00</td>
+                </tr>
+                <tr>
+                    <td>(Industrial production manager, Public relations manager)</td>
+                    <td>70.12</td>
+                    <td>8.04</td>
+                    <td>76.25</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td>(Computer systems manager, Billing and posting clerk)</td>
+                    <td>75.34</td>
+                    <td>8.02</td>
+                    <td>81.82</td>
+                    <td>20.81</td>
+                </tr>
+                <tr>
+                    <td>(Computer systems analyst, Legal secretary)</td>
+                    <td>90.42</td>
+                    <td>8.00</td>
+                    <td>98.28</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Computer network architect, Public safety telecommunicator)</td>
+                    <td>90.79</td>
+                    <td>8.00</td>
+                    <td>98.68</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Information security analyst, Public relations specialist)</td>
+                    <td>81.67</td>
+                    <td>7.97</td>
+                    <td>88.75</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td>(Personal financial advisor, Mental health counselor)</td>
+                    <td>56.95</td>
+                    <td>7.96</td>
+                    <td>61.88</td>
+                    <td>11.25</td>
+                </tr>
+                <tr>
+                    <td>(Industrial production manager, Human resources manager)</td>
+                    <td>77.20</td>
+                    <td>7.79</td>
+                    <td>83.75</td>
+                    <td>15.00</td>
+                </tr>
+                <tr>
+                    <td>(Software developer, Operations research analyst)</td>
+                    <td>66.31</td>
+                    <td>7.77</td>
+                    <td>71.88</td>
+                    <td>41.25</td>
+                </tr>
+                <tr>
+                    <td>(Chiropractor, Massage therapist)</td>
+                    <td>74.94</td>
+                    <td>7.76</td>
+                    <td>81.25</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>(Surgeon, Medical records specialist)</td>
+                    <td>72.95</td>
+                    <td>7.71</td>
+                    <td>79.03</td>
+                    <td>3.23</td>
+                </tr>
+                <tr>
+                    <td>(Computer programmer, Paralegal)</td>
+                    <td>90.71</td>
+                    <td>7.55</td>
+                    <td>98.12</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Chiropractor, Physical therapist)</td>
+                    <td>57.67</td>
+                    <td>7.41</td>
+                    <td>62.22</td>
+                    <td>13.05</td>
+                </tr>
+                <tr>
+                    <td>(Web developer, Loan interviewer)</td>
+                    <td>85.80</td>
+                    <td>7.38</td>
+                    <td>92.62</td>
+                    <td>9.75</td>
+                </tr>
+                <tr>
+                    <td>(Web and digital interface designer, Customer service representative)</td>
+                    <td>91.88</td>
+                    <td>7.30</td>
+                    <td>99.10</td>
+                    <td>1.78</td>
+                </tr>
+                <tr>
+                    <td>(Computer systems manager, File Clerk)</td>
+                    <td>87.12</td>
+                    <td>7.19</td>
+                    <td>93.88</td>
+                    <td>9.75</td>
+                </tr>
+                <tr>
+                    <td>(Computer support specialist, Receptionist)</td>
+                    <td>74.34</td>
+                    <td>7.08</td>
+                    <td>80.00</td>
+                    <td>7.86</td>
+                </tr>
+                <tr>
+                    <td>(Counter and rental clerk, Customer service representative)</td>
+                    <td>68.44</td>
+                    <td>7.06</td>
+                    <td>73.44</td>
+                    <td>34.38</td>
+                </tr>
+                <tr>
+                    <td>(Computer network architect, Loan officer)</td>
+                    <td>88.82</td>
+                    <td>7.01</td>
+                    <td>95.51</td>
+                    <td>1.29</td>
+                </tr>
+                <tr>
+                    <td>(Construction manager, Real estate broker)</td>
+                    <td>90.68</td>
+                    <td>7.00</td>
+                    <td>97.50</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>(Financial and investment analyst, Training and development specialist)</td>
+                    <td>59.95</td>
+                    <td>6.96</td>
+                    <td>64.38</td>
+                    <td>13.75</td>
+                </tr>
+                <tr>
+                    <td>(Food service manager, Food preparation worker)</td>
+                    <td>63.59</td>
+                    <td>6.89</td>
+                    <td>68.12</td>
+                    <td>38.75</td>
+                </tr>
+                <tr>
+                    <td>(Financial and investment analyst, Marketing specialist)</td>
+                    <td>62.34</td>
+                    <td>6.79</td>
+                    <td>66.88</td>
+                    <td>11.25</td>
+                </tr>
+                <tr>
+                    <td>(Information security analyst, Social and community service manager)</td>
+                    <td>71.72</td>
+                    <td>6.76</td>
+                    <td>76.88</td>
+                    <td>8.75</td>
+                </tr>
+                <tr>
+                    <td>(Construction manager, Supervisor of personal care and service workers)</td>
+                    <td>89.02</td>
+                    <td>6.75</td>
+                    <td>95.45</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Web developer, Advertising sales agent)</td>
+                    <td>63.07</td>
+                    <td>6.74</td>
+                    <td>67.65</td>
+                    <td>3.17</td>
+                </tr>
+                <tr>
+                    <td>(Cost estimator, Public relations specialist)</td>
+                    <td>78.72</td>
+                    <td>6.71</td>
+                    <td>84.38</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Supervisor of transportation and material moving workers, Order clerk)</td>
+                    <td>76.91</td>
+                    <td>6.69</td>
+                    <td>82.41</td>
+                    <td>4.69</td>
+                </tr>
+                <tr>
+                    <td>(Electrical and electronic engineering technician, Billing and posting clerk)</td>
+                    <td>93.31</td>
+                    <td>6.69</td>
+                    <td>100.00</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Computer support specialist, Customer service representative)</td>
+                    <td>63.86</td>
+                    <td>6.56</td>
+                    <td>68.48</td>
+                    <td>55.90</td>
+                </tr>
+                <tr>
+                    <td>(Web developer, Payroll and timekeeping clerk)</td>
+                    <td>85.00</td>
+                    <td>6.55</td>
+                    <td>90.95</td>
+                    <td>3.75</td>
+                </tr>
+                <tr>
+                    <td>(Training and development manager, Human resources worker)</td>
+                    <td>59.02</td>
+                    <td>6.54</td>
+                    <td>63.12</td>
+                    <td>16.25</td>
+                </tr>
+                <tr>
+                    <td>(Computer network architect, Graphic designer)</td>
+                    <td>75.01</td>
+                    <td>6.53</td>
+                    <td>80.03</td>
+                    <td>34.53</td>
+                </tr>
+                <tr>
+                    <td>(Financial and investment analyst, Human resources manager)</td>
+                    <td>67.79</td>
+                    <td>6.50</td>
+                    <td>72.50</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>(Personal financial advisor, School psychologist)</td>
+                    <td>83.62</td>
+                    <td>6.46</td>
+                    <td>89.38</td>
+                    <td>6.87</td>
+                </tr>
+                <tr>
+                    <td>(Computer programmer, Editor)</td>
+                    <td>62.51</td>
+                    <td>6.45</td>
+                    <td>66.88</td>
+                    <td>8.75</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of non-retail sales workers, Customer service representative)</td>
+                    <td>78.43</td>
+                    <td>6.44</td>
+                    <td>83.93</td>
+                    <td>14.29</td>
+                </tr>
+                <tr>
+                    <td>(Logistician, Legal secretary)</td>
+                    <td>84.80</td>
+                    <td>6.42</td>
+                    <td>90.62</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Surgeon, Surgical technologist)</td>
+                    <td>60.12</td>
+                    <td>6.37</td>
+                    <td>64.52</td>
+                    <td>44.62</td>
+                </tr>
+                <tr>
+                    <td>(Computer programmer, Loan interviewer)</td>
+                    <td>86.51</td>
+                    <td>6.36</td>
+                    <td>92.38</td>
+                    <td>7.25</td>
+                </tr>
+                <tr>
+                    <td>(Electrical and electronic engineering technician, Payroll and timekeeping clerk)</td>
+                    <td>93.74</td>
+                    <td>6.26</td>
+                    <td>100.00</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Software developer, Accountant)</td>
+                    <td>89.65</td>
+                    <td>6.25</td>
+                    <td>95.62</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Architectural and engineering manager, Human resources worker)</td>
+                    <td>66.31</td>
+                    <td>6.23</td>
+                    <td>70.62</td>
+                    <td>16.25</td>
+                </tr>
+                <tr>
+                    <td>(Web developer, Insurance claims and policy processing clerk)</td>
+                    <td>64.42</td>
+                    <td>6.13</td>
+                    <td>68.62</td>
+                    <td>13.02</td>
+                </tr>
+                <tr>
+                    <td>(Pest control worker, Housekeeping cleaner)</td>
+                    <td>76.94</td>
+                    <td>6.13</td>
+                    <td>81.94</td>
+                    <td>6.69</td>
+                </tr>
+                <tr>
+                    <td>(Facilities manager, Social and human service assistant)</td>
+                    <td>73.96</td>
+                    <td>6.09</td>
+                    <td>78.75</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td>(Computer programmer, Tutor)</td>
+                    <td>76.30</td>
+                    <td>6.07</td>
+                    <td>81.25</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td>(Surgeon, Miscellaneous health technician)</td>
+                    <td>80.09</td>
+                    <td>6.05</td>
+                    <td>85.25</td>
+                    <td>4.00</td>
+                </tr>
+                <tr>
+                    <td>(Electrical and electronic engineering technician, Ophthalmic medical technician)</td>
+                    <td>94.00</td>
+                    <td>6.00</td>
+                    <td>100.00</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Logistician, Receptionist)</td>
+                    <td>81.94</td>
+                    <td>5.99</td>
+                    <td>87.15</td>
+                    <td>8.58</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of housekeeping and janitorial workers, Nursing assistant)</td>
+                    <td>69.85</td>
+                    <td>5.92</td>
+                    <td>74.25</td>
+                    <td>2.27</td>
+                </tr>
+                <tr>
+                    <td>(Industrial production manager, Marketing manager)</td>
+                    <td>82.91</td>
+                    <td>5.91</td>
+                    <td>88.12</td>
+                    <td>8.75</td>
+                </tr>
+                <tr>
+                    <td>(Computer support specialist, First-line supervisor of office and administrative support workers)</td>
+                    <td>84.50</td>
+                    <td>5.89</td>
+                    <td>89.77</td>
+                    <td>9.35</td>
+                </tr>
+                <tr>
+                    <td>(Software developer, Insurance underwriter)</td>
+                    <td>75.84</td>
+                    <td>5.88</td>
+                    <td>80.62</td>
+                    <td>11.25</td>
+                </tr>
+                <tr>
+                    <td>(Sales manager, Human resources worker)</td>
+                    <td>62.95</td>
+                    <td>5.87</td>
+                    <td>66.88</td>
+                    <td>3.75</td>
+                </tr>
+                <tr>
+                    <td>(Personal financial advisor, Tax preparer)</td>
+                    <td>73.00</td>
+                    <td>5.84</td>
+                    <td>77.50</td>
+                    <td>12.50</td>
+                </tr>
+                <tr>
+                    <td>(Chemical engineer, Biological scientist)</td>
+                    <td>60.03</td>
+                    <td>5.83</td>
+                    <td>63.70</td>
+                    <td>17.60</td>
+                </tr>
+                <tr>
+                    <td>(Emergency medical technician, Medical assistant)</td>
+                    <td>62.76</td>
+                    <td>5.83</td>
+                    <td>66.66</td>
+                    <td>11.11</td>
+                </tr>
+                <tr>
+                    <td>(Financial and investment analyst, Public relations manager)</td>
+                    <td>50.62</td>
+                    <td>5.81</td>
+                    <td>53.75</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of housekeeping and janitorial workers, Housekeeping cleaner)</td>
+                    <td>59.97</td>
+                    <td>5.78</td>
+                    <td>63.47</td>
+                    <td>35.34</td>
+                </tr>
+                <tr>
+                    <td>(Database administrator, File Clerk)</td>
+                    <td>81.66</td>
+                    <td>5.70</td>
+                    <td>86.62</td>
+                    <td>11.75</td>
+                </tr>
+                <tr>
+                    <td>(Food service manager, Fast food and counter worker)</td>
+                    <td>83.88</td>
+                    <td>5.70</td>
+                    <td>88.88</td>
+                    <td>11.90</td>
+                </tr>
+                <tr>
+                    <td>(Materials engineer, Ophthalmic medical technician)</td>
+                    <td>90.81</td>
+                    <td>5.66</td>
+                    <td>96.25</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>(Electrical and electronic engineering technician, Insurance claims and policy processing clerk)</td>
+                    <td>83.83</td>
+                    <td>5.65</td>
+                    <td>88.82</td>
+                    <td>6.58</td>
+                </tr>
+                <tr>
+                    <td>(Project management specialist, Human resources worker)</td>
+                    <td>59.63</td>
+                    <td>5.58</td>
+                    <td>63.12</td>
+                    <td>18.75</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of production and operating workers, Order clerk)</td>
+                    <td>74.53</td>
+                    <td>5.53</td>
+                    <td>78.91</td>
+                    <td>17.19</td>
+                </tr>
+                <tr>
+                    <td>(Industrial production manager, Administrative services manager)</td>
+                    <td>68.53</td>
+                    <td>5.45</td>
+                    <td>72.50</td>
+                    <td>10.00</td>
+                </tr>
+                <tr>
+                    <td>(Occupational health and safety specialist, Customer service representative)</td>
+                    <td>94.59</td>
+                    <td>5.40</td>
+                    <td>100.00</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Database administrator, Billing and posting clerk)</td>
+                    <td>70.97</td>
+                    <td>5.38</td>
+                    <td>74.97</td>
+                    <td>21.46</td>
+                </tr>
+                <tr>
+                    <td>(Computer systems analyst, File Clerk)</td>
+                    <td>87.20</td>
+                    <td>5.37</td>
+                    <td>92.12</td>
+                    <td>9.25</td>
+                </tr>
+                <tr>
+                    <td>(Counter and rental clerk, Postal service clerk)</td>
+                    <td>78.83</td>
+                    <td>5.33</td>
+                    <td>83.31</td>
+                    <td>27.14</td>
+                </tr>
+                <tr>
+                    <td>(Web developer, Real estate broker)</td>
+                    <td>87.57</td>
+                    <td>5.31</td>
+                    <td>92.50</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>(Postsecondary teacher, Elementary and middle school teacher)</td>
+                    <td>63.47</td>
+                    <td>5.31</td>
+                    <td>67.09</td>
+                    <td>17.54</td>
+                </tr>
+                <tr>
+                    <td>(Industrial production manager, Accountant)</td>
+                    <td>75.17</td>
+                    <td>5.30</td>
+                    <td>79.38</td>
+                    <td>6.25</td>
+                </tr>
+                <tr>
+                    <td>(Architectural and engineering manager, Marketing specialist)</td>
+                    <td>61.01</td>
+                    <td>5.29</td>
+                    <td>64.38</td>
+                    <td>18.75</td>
+                </tr>
+                <tr>
+                    <td>(Information security analyst, Payroll and timekeeping clerk)</td>
+                    <td>72.61</td>
+                    <td>5.29</td>
+                    <td>76.58</td>
+                    <td>24.35</td>
+                </tr>
+                <tr>
+                    <td>(Food service manager, First-line supervisor of food preparation and serving workers)</td>
+                    <td>52.80</td>
+                    <td>5.25</td>
+                    <td>55.62</td>
+                    <td>66.25</td>
+                </tr>
+                <tr>
+                    <td>(Property assessor, First-line supervisor of office and administrative support workers)</td>
+                    <td>49.18</td>
+                    <td>5.21</td>
+                    <td>51.88</td>
+                    <td>3.75</td>
+                </tr>
+                <tr>
+                    <td>(Operation manager, Human resources worker)</td>
+                    <td>72.30</td>
+                    <td>5.20</td>
+                    <td>76.25</td>
+                    <td>17.50</td>
+                </tr>
+                <tr>
+                    <td>(Software quality tester, Payroll and timekeeping clerk)</td>
+                    <td>70.94</td>
+                    <td>5.18</td>
+                    <td>74.70</td>
+                    <td>35.60</td>
+                </tr>
+                <tr>
+                    <td>(Computer systems analyst, Public safety telecommunicator)</td>
+                    <td>92.38</td>
+                    <td>5.16</td>
+                    <td>97.40</td>
+                    <td>2.57</td>
+                </tr>
+                <tr>
+                    <td>(Network and computer systems administrator, Compliance officer)</td>
+                    <td>89.53</td>
+                    <td>5.14</td>
+                    <td>94.38</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Food service manager, Social and human service assistant)</td>
+                    <td>91.34</td>
+                    <td>5.12</td>
+                    <td>96.25</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of production and operating workers, First-line supervisor of office and administrative support workers)</td>
+                    <td>90.49</td>
+                    <td>5.09</td>
+                    <td>95.37</td>
+                    <td>9.26</td>
+                </tr>
+                <tr>
+                    <td>(Cutting worker, Sewing machine operator)</td>
+                    <td>68.83</td>
+                    <td>5.09</td>
+                    <td>72.50</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td>(Architectural and engineering manager, Training and development specialist)</td>
+                    <td>65.42</td>
+                    <td>5.08</td>
+                    <td>68.75</td>
+                    <td>30.00</td>
+                </tr>
+                <tr>
+                    <td>(Aerospace engineer, Biological scientist)</td>
+                    <td>94.33</td>
+                    <td>5.07</td>
+                    <td>99.38</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Chief executive, Compliance officer)</td>
+                    <td>90.22</td>
+                    <td>5.04</td>
+                    <td>95.00</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td>(Information security analyst, Training and development specialist)</td>
+                    <td>80.78</td>
+                    <td>5.01</td>
+                    <td>85.00</td>
+                    <td>20.00</td>
+                </tr>
+                <tr>
+                    <td>(Computer support specialist, Public safety telecommunicator)</td>
+                    <td>92.50</td>
+                    <td>5.01</td>
+                    <td>97.37</td>
+                    <td>2.63</td>
+                </tr>
+                <tr>
+                    <td>(Emergency medical technician, Respiratory therapist)</td>
+                    <td>72.56</td>
+                    <td>5.00</td>
+                    <td>76.39</td>
+                    <td>8.34</td>
+                </tr>
+                <tr>
+                    <td>(Construction manager, Medical and health services manager)</td>
+                    <td>95.03</td>
+                    <td>4.97</td>
+                    <td>100.00</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Actor, Author)</td>
+                    <td>81.38</td>
+                    <td>4.96</td>
+                    <td>85.62</td>
+                    <td>3.75</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of security workers, Public safety telecommunicator)</td>
+                    <td>80.62</td>
+                    <td>4.95</td>
+                    <td>84.87</td>
+                    <td>10.13</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of housekeeping and janitorial workers, Healthcare social worker)</td>
+                    <td>84.91</td>
+                    <td>4.95</td>
+                    <td>89.31</td>
+                    <td>4.77</td>
+                </tr>
+                <tr>
+                    <td>(Occupational health and safety specialist, Social and human service assistant)</td>
+                    <td>80.30</td>
+                    <td>4.93</td>
+                    <td>84.38</td>
+                    <td>11.25</td>
+                </tr>
+                <tr>
+                    <td>(Personal financial advisor, Travel agent)</td>
+                    <td>88.53</td>
+                    <td>4.93</td>
+                    <td>93.12</td>
+                    <td>5.42</td>
+                </tr>
+                <tr>
+                    <td>(Operation manager, Public relations specialist)</td>
+                    <td>69.55</td>
+                    <td>4.88</td>
+                    <td>73.12</td>
+                    <td>3.75</td>
+                </tr>
+                <tr>
+                    <td>(Financial and investment analyst, Administrative services manager)</td>
+                    <td>73.76</td>
+                    <td>4.83</td>
+                    <td>77.50</td>
+                    <td>20.00</td>
+                </tr>
+                <tr>
+                    <td>(Sales manager, Training and development specialist)</td>
+                    <td>69.06</td>
+                    <td>4.81</td>
+                    <td>72.50</td>
+                    <td>25.00</td>
+                </tr>
+                <tr>
+                    <td>(Materials engineer, Medical records specialist)</td>
+                    <td>94.02</td>
+                    <td>4.79</td>
+                    <td>98.75</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Industrial production manager, Operations research analyst)</td>
+                    <td>74.38</td>
+                    <td>4.78</td>
+                    <td>78.12</td>
+                    <td>8.75</td>
+                </tr>
+                <tr>
+                    <td>(Web and digital interface designer, Insurance sales agent)</td>
+                    <td>74.61</td>
+                    <td>4.77</td>
+                    <td>78.41</td>
+                    <td>6.82</td>
+                </tr>
+                <tr>
+                    <td>(Parts salesperson, Order clerk)</td>
+                    <td>77.24</td>
+                    <td>4.77</td>
+                    <td>81.08</td>
+                    <td>13.52</td>
+                </tr>
+                <tr>
+                    <td>(Mechanical engineer, Biological scientist)</td>
+                    <td>91.07</td>
+                    <td>4.76</td>
+                    <td>95.62</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Computer hardware engineer, Biological scientist)</td>
+                    <td>95.30</td>
+                    <td>4.70</td>
+                    <td>100.00</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Emergency medical technician, Physician assistant)</td>
+                    <td>63.56</td>
+                    <td>4.66</td>
+                    <td>66.66</td>
+                    <td>5.55</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of retail sales workers, Customer service representative)</td>
+                    <td>79.41</td>
+                    <td>4.65</td>
+                    <td>83.33</td>
+                    <td>22.23</td>
+                </tr>
+                <tr>
+                    <td>(Materials engineer, Miscellaneous health technician)</td>
+                    <td>87.68</td>
+                    <td>4.64</td>
+                    <td>91.94</td>
+                    <td>8.63</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of construction trades and extraction workers, First-line supervisor of office and administrative support workers)</td>
+                    <td>93.81</td>
+                    <td>4.64</td>
+                    <td>98.38</td>
+                    <td>3.24</td>
+                </tr>
+                <tr>
+                    <td>(Lawyer, Paralegal)</td>
+                    <td>48.28</td>
+                    <td>4.63</td>
+                    <td>50.62</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Printing press operator, Sewing machine operator)</td>
+                    <td>94.80</td>
+                    <td>4.62</td>
+                    <td>99.38</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Purchasing manager, Human resources worker)</td>
+                    <td>54.27</td>
+                    <td>4.59</td>
+                    <td>56.88</td>
+                    <td>6.25</td>
+                </tr>
+                <tr>
+                    <td>(Materials engineer, Biological scientist)</td>
+                    <td>72.19</td>
+                    <td>4.53</td>
+                    <td>75.58</td>
+                    <td>18.85</td>
+                </tr>
+                <tr>
+                    <td>(Training and development manager, Training and development specialist)</td>
+                    <td>54.92</td>
+                    <td>4.51</td>
+                    <td>57.50</td>
+                    <td>20.00</td>
+                </tr>
+                <tr>
+                    <td>(Mechanical engineer, Filling machine operator)</td>
+                    <td>82.95</td>
+                    <td>4.50</td>
+                    <td>86.88</td>
+                    <td>8.75</td>
+                </tr>
+                <tr>
+                    <td>(Facilities manager, Human resources worker)</td>
+                    <td>72.25</td>
+                    <td>4.48</td>
+                    <td>75.62</td>
+                    <td>6.25</td>
+                </tr>
+                <tr>
+                    <td>(Operation manager, Social and community service manager)</td>
+                    <td>53.75</td>
+                    <td>4.45</td>
+                    <td>56.25</td>
+                    <td>12.50</td>
+                </tr>
+                <tr>
+                    <td>(Sales manager, Marketing specialist)</td>
+                    <td>63.97</td>
+                    <td>4.42</td>
+                    <td>66.88</td>
+                    <td>21.25</td>
+                </tr>
+                <tr>
+                    <td>(Software developer, Graphic designer)</td>
+                    <td>75.64</td>
+                    <td>4.40</td>
+                    <td>79.16</td>
+                    <td>28.17</td>
+                </tr>
+                <tr>
+                    <td>(Emergency medical technician, Miscellaneous health technician)</td>
+                    <td>87.63</td>
+                    <td>4.40</td>
+                    <td>91.66</td>
+                    <td>5.55</td>
+                </tr>
+                <tr>
+                    <td>(Chief executive, Fundraiser)</td>
+                    <td>47.80</td>
+                    <td>4.39</td>
+                    <td>50.00</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Emergency medical technician, Radiologic technician)</td>
+                    <td>77.62</td>
+                    <td>4.37</td>
+                    <td>81.15</td>
+                    <td>9.92</td>
+                </tr>
+                <tr>
+                    <td>(Civil engineer, Real estate broker)</td>
+                    <td>93.23</td>
+                    <td>4.36</td>
+                    <td>97.50</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td>(Software quality tester, Insurance sales agent)</td>
+                    <td>72.31</td>
+                    <td>4.34</td>
+                    <td>75.51</td>
+                    <td>12.62</td>
+                </tr>
+                <tr>
+                    <td>(Aerospace engineer, Medical scientist)</td>
+                    <td>93.91</td>
+                    <td>4.29</td>
+                    <td>98.12</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Software quality tester, Insurance claims and policy processing clerk)</td>
+                    <td>60.69</td>
+                    <td>4.28</td>
+                    <td>63.32</td>
+                    <td>25.98</td>
+                </tr>
+                <tr>
+                    <td>(Computer systems analyst, Billing and posting clerk)</td>
+                    <td>66.64</td>
+                    <td>4.28</td>
+                    <td>69.56</td>
+                    <td>13.04</td>
+                </tr>
+                <tr>
+                    <td>(Computer systems manager, Compliance officer)</td>
+                    <td>87.36</td>
+                    <td>4.26</td>
+                    <td>91.25</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>(Computer programmer, Graphic designer)</td>
+                    <td>75.07</td>
+                    <td>4.25</td>
+                    <td>78.38</td>
+                    <td>13.51</td>
+                </tr>
+                <tr>
+                    <td>(Sales manager, Human resources manager)</td>
+                    <td>49.69</td>
+                    <td>4.25</td>
+                    <td>51.88</td>
+                    <td>33.75</td>
+                </tr>
+                <tr>
+                    <td>(Web developer, Graphic designer)</td>
+                    <td>69.63</td>
+                    <td>4.24</td>
+                    <td>72.75</td>
+                    <td>38.48</td>
+                </tr>
+                <tr>
+                    <td>(Mechanical engineer, Medical appliance technician)</td>
+                    <td>78.40</td>
+                    <td>4.24</td>
+                    <td>81.88</td>
+                    <td>8.75</td>
+                </tr>
+                <tr>
+                    <td>(Project management specialist, Public relations specialist)</td>
+                    <td>66.44</td>
+                    <td>4.23</td>
+                    <td>69.38</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Occupational health and safety specialist, Order clerk)</td>
+                    <td>92.78</td>
+                    <td>4.22</td>
+                    <td>96.88</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Chemical engineer, Ophthalmic medical technician)</td>
+                    <td>95.79</td>
+                    <td>4.21</td>
+                    <td>100.00</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Computer support specialist, File Clerk)</td>
+                    <td>94.24</td>
+                    <td>4.21</td>
+                    <td>98.38</td>
+                    <td>3.25</td>
+                </tr>
+                <tr>
+                    <td>(Web and digital interface designer, Marketing specialist)</td>
+                    <td>61.72</td>
+                    <td>4.21</td>
+                    <td>64.38</td>
+                    <td>11.25</td>
+                </tr>
+                <tr>
+                    <td>(Architectural and engineering manager, Social and community service manager)</td>
+                    <td>59.37</td>
+                    <td>4.20</td>
+                    <td>61.88</td>
+                    <td>18.75</td>
+                </tr>
+                <tr>
+                    <td>(Occupational health and safety specialist, First-line supervisor of office and administrative support workers)</td>
+                    <td>94.02</td>
+                    <td>4.19</td>
+                    <td>98.12</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Architectural and engineering manager, Human resources manager)</td>
+                    <td>64.85</td>
+                    <td>4.18</td>
+                    <td>67.50</td>
+                    <td>32.50</td>
+                </tr>
+                <tr>
+                    <td>(Counter and rental clerk, Social and human service assistant)</td>
+                    <td>82.05</td>
+                    <td>4.16</td>
+                    <td>85.62</td>
+                    <td>26.25</td>
+                </tr>
+                <tr>
+                    <td>(Dentist, Pharmacist)</td>
+                    <td>89.53</td>
+                    <td>4.15</td>
+                    <td>93.42</td>
+                    <td>7.89</td>
+                </tr>
+                <tr>
+                    <td>(Cost estimator, Tax preparer)</td>
+                    <td>71.62</td>
+                    <td>4.12</td>
+                    <td>74.64</td>
+                    <td>25.30</td>
+                </tr>
+                <tr>
+                    <td>(Counter and rental clerk, File Clerk)</td>
+                    <td>77.97</td>
+                    <td>4.04</td>
+                    <td>81.25</td>
+                    <td>25.00</td>
+                </tr>
+                <tr>
+                    <td>(Management analyst, Human resources worker)</td>
+                    <td>52.83</td>
+                    <td>4.00</td>
+                    <td>55.00</td>
+                    <td>10.00</td>
+                </tr>
+                <tr>
+                    <td>(Actor, Artist)</td>
+                    <td>79.22</td>
+                    <td>3.98</td>
+                    <td>82.50</td>
+                    <td>7.50</td>
+                </tr>
+                <tr>
+                    <td>(Mechanical engineer, Miscellaneous health technician)</td>
+                    <td>93.62</td>
+                    <td>3.98</td>
+                    <td>97.50</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>(Mechanical engineer, Graphic designer)</td>
+                    <td>91.25</td>
+                    <td>3.95</td>
+                    <td>95.00</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Computer support specialist, Billing and posting clerk)</td>
+                    <td>78.39</td>
+                    <td>3.90</td>
+                    <td>81.53</td>
+                    <td>10.87</td>
+                </tr>
+                <tr>
+                    <td>(Police officer, Public safety telecommunicator)</td>
+                    <td>81.35</td>
+                    <td>3.90</td>
+                    <td>84.87</td>
+                    <td>27.63</td>
+                </tr>
+                <tr>
+                    <td>(Facilities manager, Marketing specialist)</td>
+                    <td>74.51</td>
+                    <td>3.86</td>
+                    <td>77.50</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td>(Database administrator, Insurance claims and policy processing clerk)</td>
+                    <td>57.66</td>
+                    <td>3.85</td>
+                    <td>59.97</td>
+                    <td>6.51</td>
+                </tr>
+                <tr>
+                    <td>(Counter and rental clerk, Cashier)</td>
+                    <td>69.41</td>
+                    <td>3.84</td>
+                    <td>72.05</td>
+                    <td>30.91</td>
+                </tr>
+                <tr>
+                    <td>(Electrical and electronics engineer, Biological scientist)</td>
+                    <td>94.69</td>
+                    <td>3.84</td>
+                    <td>98.48</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Financial and investment analyst, Marketing manager)</td>
+                    <td>69.12</td>
+                    <td>3.83</td>
+                    <td>71.88</td>
+                    <td>6.25</td>
+                </tr>
+                <tr>
+                    <td>(Purchasing manager, Social and community service manager)</td>
+                    <td>51.14</td>
+                    <td>3.83</td>
+                    <td>53.12</td>
+                    <td>48.75</td>
+                </tr>
+                <tr>
+                    <td>(Database administrator, Compliance officer)</td>
+                    <td>85.35</td>
+                    <td>3.83</td>
+                    <td>88.75</td>
+                    <td>7.50</td>
+                </tr>
+                <tr>
+                    <td>(Architectural and engineering manager, Public relations manager)</td>
+                    <td>50.51</td>
+                    <td>3.82</td>
+                    <td>52.50</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td>(Architectural and engineering manager, Administrative services manager)</td>
+                    <td>78.20</td>
+                    <td>3.77</td>
+                    <td>81.25</td>
+                    <td>17.50</td>
+                </tr>
+                <tr>
+                    <td>(Database administrator, Advertising sales agent)</td>
+                    <td>71.62</td>
+                    <td>3.72</td>
+                    <td>74.38</td>
+                    <td>5.10</td>
+                </tr>
+                <tr>
+                    <td>(Sales manager, Public relations manager)</td>
+                    <td>56.01</td>
+                    <td>3.66</td>
+                    <td>58.12</td>
+                    <td>13.75</td>
+                </tr>
+                <tr>
+                    <td>(Emergency medical technician, Veterinary technician)</td>
+                    <td>96.34</td>
+                    <td>3.66</td>
+                    <td>100.00</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Software quality tester, Advertising sales agent)</td>
+                    <td>65.42</td>
+                    <td>3.64</td>
+                    <td>67.75</td>
+                    <td>31.25</td>
+                </tr>
+                <tr>
+                    <td>(Information security analyst, Administrative services manager)</td>
+                    <td>72.89</td>
+                    <td>3.60</td>
+                    <td>75.62</td>
+                    <td>16.25</td>
+                </tr>
+                <tr>
+                    <td>(Property assessor, Social and community service manager)</td>
+                    <td>62.68</td>
+                    <td>3.59</td>
+                    <td>65.00</td>
+                    <td>15.00</td>
+                </tr>
+                <tr>
+                    <td>(Postal service mail carrier, Postal service clerk)</td>
+                    <td>67.44</td>
+                    <td>3.59</td>
+                    <td>70.12</td>
+                    <td>59.76</td>
+                </tr>
+                <tr>
+                    <td>(Electrical and electronics engineer, Medical appliance technician)</td>
+                    <td>83.65</td>
+                    <td>3.58</td>
+                    <td>86.74</td>
+                    <td>6.52</td>
+                </tr>
+                <tr>
+                    <td>(Training and development manager, Insurance claims and policy processing clerk)</td>
+                    <td>57.55</td>
+                    <td>3.58</td>
+                    <td>59.70</td>
+                    <td>7.83</td>
+                </tr>
+                <tr>
+                    <td>(Supervisor of transportation and material moving workers, First-line supervisor of office and administrative support workers)</td>
+                    <td>84.02</td>
+                    <td>3.56</td>
+                    <td>87.12</td>
+                    <td>7.57</td>
+                </tr>
+                <tr>
+                    <td>(Correctional officer, Public safety telecommunicator)</td>
+                    <td>93.98</td>
+                    <td>3.48</td>
+                    <td>97.37</td>
+                    <td>5.27</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of retail sales workers, Social and human service assistant)</td>
+                    <td>70.04</td>
+                    <td>3.44</td>
+                    <td>72.50</td>
+                    <td>12.50</td>
+                </tr>
+                <tr>
+                    <td>(Financial and investment analyst, Insurance underwriter)</td>
+                    <td>54.94</td>
+                    <td>3.41</td>
+                    <td>56.88</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Operation manager, Compliance officer)</td>
+                    <td>73.03</td>
+                    <td>3.41</td>
+                    <td>75.62</td>
+                    <td>11.25</td>
+                </tr>
+                <tr>
+                    <td>(Software quality tester, Loan interviewer)</td>
+                    <td>80.90</td>
+                    <td>3.41</td>
+                    <td>83.75</td>
+                    <td>11.00</td>
+                </tr>
+                <tr>
+                    <td>(Project management specialist, Human resources manager)</td>
+                    <td>69.44</td>
+                    <td>3.40</td>
+                    <td>71.88</td>
+                    <td>8.75</td>
+                </tr>
+                <tr>
+                    <td>(Logistician, Paralegal)</td>
+                    <td>89.38</td>
+                    <td>3.38</td>
+                    <td>92.50</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>(Painting worker, Artist)</td>
+                    <td>87.02</td>
+                    <td>3.35</td>
+                    <td>90.00</td>
+                    <td>20.00</td>
+                </tr>
+                <tr>
+                    <td>(Retail salesperson, Receptionist)</td>
+                    <td>93.53</td>
+                    <td>3.31</td>
+                    <td>96.72</td>
+                    <td>1.78</td>
+                </tr>
+                <tr>
+                    <td>(Building cleaner, Housekeeping cleaner)</td>
+                    <td>59.88</td>
+                    <td>3.29</td>
+                    <td>62.01</td>
+                    <td>54.39</td>
+                </tr>
+                <tr>
+                    <td>(Operation manager, Human resources manager)</td>
+                    <td>68.30</td>
+                    <td>3.28</td>
+                    <td>70.62</td>
+                    <td>31.25</td>
+                </tr>
+                <tr>
+                    <td>(Training and development manager, Marketing specialist)</td>
+                    <td>54.36</td>
+                    <td>3.28</td>
+                    <td>56.25</td>
+                    <td>17.50</td>
+                </tr>
+                <tr>
+                    <td>(Information security analyst, Insurance claims and policy processing clerk)</td>
+                    <td>63.30</td>
+                    <td>3.23</td>
+                    <td>65.39</td>
+                    <td>16.84</td>
+                </tr>
+                <tr>
+                    <td>(Operation manager, Public relations manager)</td>
+                    <td>51.42</td>
+                    <td>3.21</td>
+                    <td>53.12</td>
+                    <td>3.75</td>
+                </tr>
+                <tr>
+                    <td>(Training and development manager, Human resources manager)</td>
+                    <td>50.22</td>
+                    <td>3.20</td>
+                    <td>51.88</td>
+                    <td>66.25</td>
+                </tr>
+                <tr>
+                    <td>(Architectural and engineering manager, Marketing manager)</td>
+                    <td>61.19</td>
+                    <td>3.20</td>
+                    <td>63.12</td>
+                    <td>28.75</td>
+                </tr>
+                <tr>
+                    <td>(Project management specialist, Training and development specialist)</td>
+                    <td>61.73</td>
+                    <td>3.19</td>
+                    <td>63.75</td>
+                    <td>35.00</td>
+                </tr>
+                <tr>
+                    <td>(Chief executive, Lodging manager)</td>
+                    <td>73.25</td>
+                    <td>3.17</td>
+                    <td>75.62</td>
+                    <td>6.25</td>
+                </tr>
+                <tr>
+                    <td>(Materials engineer, Graphic designer)</td>
+                    <td>94.44</td>
+                    <td>3.15</td>
+                    <td>97.50</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of non-retail sales workers, First-line supervisor of office and administrative support workers)</td>
+                    <td>59.23</td>
+                    <td>3.13</td>
+                    <td>61.34</td>
+                    <td>48.75</td>
+                </tr>
+                <tr>
+                    <td>(Surgeon, Biological scientist)</td>
+                    <td>93.77</td>
+                    <td>3.10</td>
+                    <td>96.77</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Project management specialist, Public relations manager)</td>
+                    <td>50.88</td>
+                    <td>3.09</td>
+                    <td>52.50</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>(Facilities manager, Social and community service manager)</td>
+                    <td>53.33</td>
+                    <td>3.06</td>
+                    <td>55.00</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>(Property assessor, Tax preparer)</td>
+                    <td>59.95</td>
+                    <td>3.05</td>
+                    <td>61.83</td>
+                    <td>6.35</td>
+                </tr>
+                <tr>
+                    <td>(Computer support specialist, Payroll and timekeeping clerk)</td>
+                    <td>83.15</td>
+                    <td>3.04</td>
+                    <td>85.71</td>
+                    <td>19.89</td>
+                </tr>
+                <tr>
+                    <td>(Construction and building inspector, Real estate broker)</td>
+                    <td>94.54</td>
+                    <td>3.04</td>
+                    <td>97.50</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Computer systems manager, Lodging manager)</td>
+                    <td>90.89</td>
+                    <td>3.03</td>
+                    <td>93.75</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of production and operating workers, Filling machine operator)</td>
+                    <td>65.72</td>
+                    <td>3.02</td>
+                    <td>67.64</td>
+                    <td>64.72</td>
+                </tr>
+                <tr>
+                    <td>(Refractory machinery mechanic, Filling machine operator)</td>
+                    <td>77.99</td>
+                    <td>3.02</td>
+                    <td>80.31</td>
+                    <td>36.25</td>
+                </tr>
+                <tr>
+                    <td>(Electrical and electronics engineer, Medical scientist)</td>
+                    <td>95.55</td>
+                    <td>2.98</td>
+                    <td>98.48</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Mechanical engineer, Medical scientist)</td>
+                    <td>92.18</td>
+                    <td>2.97</td>
+                    <td>95.00</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>(Stocker, Order clerk)</td>
+                    <td>59.17</td>
+                    <td>2.96</td>
+                    <td>61.02</td>
+                    <td>39.66</td>
+                </tr>
+                <tr>
+                    <td>(Computer systems manager, Loan officer)</td>
+                    <td>89.00</td>
+                    <td>2.95</td>
+                    <td>91.70</td>
+                    <td>1.28</td>
+                </tr>
+                <tr>
+                    <td>(Computer hardware engineer, Medical appliance technician)</td>
+                    <td>87.37</td>
+                    <td>2.95</td>
+                    <td>90.00</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td>(Dishwasher, Food preparation worker)</td>
+                    <td>58.20</td>
+                    <td>2.93</td>
+                    <td>60.00</td>
+                    <td>15.00</td>
+                </tr>
+                <tr>
+                    <td>(Counter and rental clerk, Order clerk)</td>
+                    <td>62.11</td>
+                    <td>2.92</td>
+                    <td>64.06</td>
+                    <td>71.88</td>
+                </tr>
+                <tr>
+                    <td>(Training and development manager, Social and community service manager)</td>
+                    <td>53.41</td>
+                    <td>2.91</td>
+                    <td>55.00</td>
+                    <td>15.00</td>
+                </tr>
+                <tr>
+                    <td>(Chief executive, Loan officer)</td>
+                    <td>72.87</td>
+                    <td>2.82</td>
+                    <td>75.00</td>
+                    <td>6.41</td>
+                </tr>
+                <tr>
+                    <td>(Cook, Food preparation worker)</td>
+                    <td>53.15</td>
+                    <td>2.81</td>
+                    <td>54.38</td>
+                    <td>91.25</td>
+                </tr>
+                <tr>
+                    <td>(Facilities manager, Human resources manager)</td>
+                    <td>70.48</td>
+                    <td>2.79</td>
+                    <td>72.50</td>
+                    <td>7.50</td>
+                </tr>
+                <tr>
+                    <td>(Purchasing manager, Human resources manager)</td>
+                    <td>50.45</td>
+                    <td>2.77</td>
+                    <td>51.88</td>
+                    <td>11.25</td>
+                </tr>
+                <tr>
+                    <td>(Facilities manager, Training and development specialist)</td>
+                    <td>70.53</td>
+                    <td>2.77</td>
+                    <td>72.50</td>
+                    <td>25.00</td>
+                </tr>
+                <tr>
+                    <td>(Counter and rental clerk, Billing and posting clerk)</td>
+                    <td>61.59</td>
+                    <td>2.77</td>
+                    <td>63.05</td>
+                    <td>73.91</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of production and operating workers, First-line supervisor of food preparation and serving workers)</td>
+                    <td>94.25</td>
+                    <td>2.76</td>
+                    <td>96.88</td>
+                    <td>6.25</td>
+                </tr>
+                <tr>
+                    <td>(Web and digital interface designer, Social and community service manager)</td>
+                    <td>70.53</td>
+                    <td>2.75</td>
+                    <td>72.50</td>
+                    <td>7.50</td>
+                </tr>
+                <tr>
+                    <td>(Cutting worker, Laundry worker)</td>
+                    <td>95.73</td>
+                    <td>2.75</td>
+                    <td>98.44</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Facilities manager, Public relations manager)</td>
+                    <td>61.99</td>
+                    <td>2.74</td>
+                    <td>63.75</td>
+                    <td>10.00</td>
+                </tr>
+                <tr>
+                    <td>(Training and development manager, Public relations manager)</td>
+                    <td>51.06</td>
+                    <td>2.73</td>
+                    <td>52.50</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Dishwasher, First-line supervisor of food preparation and serving workers)</td>
+                    <td>64.46</td>
+                    <td>2.70</td>
+                    <td>66.25</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Painter, Artist)</td>
+                    <td>55.35</td>
+                    <td>2.70</td>
+                    <td>56.69</td>
+                    <td>78.03</td>
+                </tr>
+                <tr>
+                    <td>(Sales manager, Insurance sales agent)</td>
+                    <td>49.66</td>
+                    <td>2.69</td>
+                    <td>51.02</td>
+                    <td>4.54</td>
+                </tr>
+                <tr>
+                    <td>(Chemists and materials scientist, Biological scientist)</td>
+                    <td>50.07</td>
+                    <td>2.68</td>
+                    <td>51.35</td>
+                    <td>94.59</td>
+                </tr>
+                <tr>
+                    <td>(Surgeon, Pharmacist)</td>
+                    <td>95.78</td>
+                    <td>2.65</td>
+                    <td>98.39</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Food service manager, Food batchmaker)</td>
+                    <td>80.92</td>
+                    <td>2.63</td>
+                    <td>83.12</td>
+                    <td>28.75</td>
+                </tr>
+                <tr>
+                    <td>(Chemical engineer, Medical assistant)</td>
+                    <td>94.95</td>
+                    <td>2.62</td>
+                    <td>97.50</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>(Wastewater treatment system operator, Medical and health services manager)</td>
+                    <td>96.78</td>
+                    <td>2.60</td>
+                    <td>99.38</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Purchasing manager, Marketing specialist)</td>
+                    <td>72.44</td>
+                    <td>2.60</td>
+                    <td>74.38</td>
+                    <td>6.25</td>
+                </tr>
+                <tr>
+                    <td>(Project management specialist, Marketing specialist)</td>
+                    <td>54.82</td>
+                    <td>2.52</td>
+                    <td>56.25</td>
+                    <td>10.00</td>
+                </tr>
+                <tr>
+                    <td>(Logistician, Medical records specialist)</td>
+                    <td>89.83</td>
+                    <td>2.52</td>
+                    <td>92.14</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Automotive service mechanic, Medical appliance technician)</td>
+                    <td>89.60</td>
+                    <td>2.51</td>
+                    <td>91.88</td>
+                    <td>8.75</td>
+                </tr>
+                <tr>
+                    <td>(Telecommunication equipment installer, Medical appliance technician)</td>
+                    <td>91.42</td>
+                    <td>2.51</td>
+                    <td>93.78</td>
+                    <td>12.45</td>
+                </tr>
+                <tr>
+                    <td>(Sales manager, Advertising sales agent)</td>
+                    <td>49.86</td>
+                    <td>2.46</td>
+                    <td>51.11</td>
+                    <td>17.02</td>
+                </tr>
+                <tr>
+                    <td>(Lawyer, Public relations specialist)</td>
+                    <td>71.39</td>
+                    <td>2.42</td>
+                    <td>73.12</td>
+                    <td>23.75</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of retail sales workers, First-line supervisor of office and administrative support workers)</td>
+                    <td>84.77</td>
+                    <td>2.33</td>
+                    <td>86.81</td>
+                    <td>9.72</td>
+                </tr>
+                <tr>
+                    <td>(Supervisor of transportation and material moving workers, Supervisor of personal care and service workers)</td>
+                    <td>84.40</td>
+                    <td>2.32</td>
+                    <td>86.37</td>
+                    <td>27.27</td>
+                </tr>
+                <tr>
+                    <td>(Industrial production manager, Financial manager)</td>
+                    <td>73.87</td>
+                    <td>2.31</td>
+                    <td>75.62</td>
+                    <td>3.75</td>
+                </tr>
+                <tr>
+                    <td>(Personal financial advisor, Insurance underwriter)</td>
+                    <td>70.25</td>
+                    <td>2.29</td>
+                    <td>71.88</td>
+                    <td>8.75</td>
+                </tr>
+                <tr>
+                    <td>(Management analyst, Training and development specialist)</td>
+                    <td>51.30</td>
+                    <td>2.29</td>
+                    <td>52.50</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Purchasing manager, Training and development specialist)</td>
+                    <td>65.95</td>
+                    <td>2.29</td>
+                    <td>67.50</td>
+                    <td>15.00</td>
+                </tr>
+                <tr>
+                    <td>(Computer systems manager, Medical and health services manager)</td>
+                    <td>94.68</td>
+                    <td>2.27</td>
+                    <td>96.88</td>
+                    <td>3.75</td>
+                </tr>
+                <tr>
+                    <td>(Purchasing manager, Public relations manager)</td>
+                    <td>56.20</td>
+                    <td>2.26</td>
+                    <td>57.50</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>(Electrical and electronic engineering technician, Filling machine operator)</td>
+                    <td>84.31</td>
+                    <td>2.25</td>
+                    <td>86.25</td>
+                    <td>10.00</td>
+                </tr>
+                <tr>
+                    <td>(Chemical engineer, Miscellaneous health technician)</td>
+                    <td>90.57</td>
+                    <td>2.22</td>
+                    <td>92.62</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>(Cook, First-line supervisor of food preparation and serving workers)</td>
+                    <td>65.43</td>
+                    <td>2.21</td>
+                    <td>66.88</td>
+                    <td>23.75</td>
+                </tr>
+                <tr>
+                    <td>(Architectural and engineering manager, Operations research analyst)</td>
+                    <td>89.25</td>
+                    <td>2.19</td>
+                    <td>91.25</td>
+                    <td>7.50</td>
+                </tr>
+                <tr>
+                    <td>(Web and digital interface designer, Payroll and timekeeping clerk)</td>
+                    <td>92.50</td>
+                    <td>2.19</td>
+                    <td>94.54</td>
+                    <td>10.92</td>
+                </tr>
+                <tr>
+                    <td>(Postsecondary teacher, Secondary school teacher)</td>
+                    <td>56.34</td>
+                    <td>2.18</td>
+                    <td>57.71</td>
+                    <td>37.91</td>
+                </tr>
+                <tr>
+                    <td>(Database administrator, Loan officer)</td>
+                    <td>89.09</td>
+                    <td>2.16</td>
+                    <td>91.08</td>
+                    <td>5.09</td>
+                </tr>
+                <tr>
+                    <td>(Materials engineer, Medical scientist)</td>
+                    <td>74.61</td>
+                    <td>2.14</td>
+                    <td>76.22</td>
+                    <td>17.56</td>
+                </tr>
+                <tr>
+                    <td>(Operation manager, Insurance underwriter)</td>
+                    <td>55.66</td>
+                    <td>2.13</td>
+                    <td>56.88</td>
+                    <td>8.75</td>
+                </tr>
+                <tr>
+                    <td>(Materials engineer, Filling machine operator)</td>
+                    <td>85.68</td>
+                    <td>2.10</td>
+                    <td>87.50</td>
+                    <td>20.00</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of non-retail sales workers, Social and human service assistant)</td>
+                    <td>54.46</td>
+                    <td>2.10</td>
+                    <td>55.62</td>
+                    <td>6.25</td>
+                </tr>
+                <tr>
+                    <td>(Chemical engineer, Pharmacy technician)</td>
+                    <td>91.19</td>
+                    <td>2.10</td>
+                    <td>93.12</td>
+                    <td>3.75</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of housekeeping and janitorial workers, Social and human service assistant)</td>
+                    <td>72.77</td>
+                    <td>2.09</td>
+                    <td>74.31</td>
+                    <td>9.77</td>
+                </tr>
+                <tr>
+                    <td>(Materials engineer, Medical and health services manager)</td>
+                    <td>97.34</td>
+                    <td>2.05</td>
+                    <td>99.38</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Chef, First-line supervisor of food preparation and serving workers)</td>
+                    <td>63.08</td>
+                    <td>2.04</td>
+                    <td>64.38</td>
+                    <td>11.25</td>
+                </tr>
+                <tr>
+                    <td>(Management analyst, Human resources manager)</td>
+                    <td>55.74</td>
+                    <td>2.02</td>
+                    <td>56.88</td>
+                    <td>11.25</td>
+                </tr>
+                <tr>
+                    <td>(Security guard, Compliance officer)</td>
+                    <td>74.27</td>
+                    <td>2.02</td>
+                    <td>75.83</td>
+                    <td>40.92</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of non-retail sales workers, Order clerk)</td>
+                    <td>71.96</td>
+                    <td>2.00</td>
+                    <td>73.44</td>
+                    <td>10.27</td>
+                </tr>
+                <tr>
+                    <td>(Financial and investment analyst, Operations research analyst)</td>
+                    <td>61.88</td>
+                    <td>1.99</td>
+                    <td>63.12</td>
+                    <td>31.25</td>
+                </tr>
+                <tr>
+                    <td>(Software quality tester, Insurance underwriter)</td>
+                    <td>76.62</td>
+                    <td>1.94</td>
+                    <td>78.12</td>
+                    <td>6.25</td>
+                </tr>
+                <tr>
+                    <td>(Cost estimator, Insurance sales agent)</td>
+                    <td>60.76</td>
+                    <td>1.93</td>
+                    <td>61.88</td>
+                    <td>17.16</td>
+                </tr>
+                <tr>
+                    <td>(Chef, Food preparation worker)</td>
+                    <td>68.03</td>
+                    <td>1.92</td>
+                    <td>69.38</td>
+                    <td>58.75</td>
+                </tr>
+                <tr>
+                    <td>(Personal financial advisor, Lodging manager)</td>
+                    <td>82.75</td>
+                    <td>1.92</td>
+                    <td>84.38</td>
+                    <td>8.75</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of housekeeping and janitorial workers, Medical assistant)</td>
+                    <td>81.38</td>
+                    <td>1.92</td>
+                    <td>82.95</td>
+                    <td>6.82</td>
+                </tr>
+                <tr>
+                    <td>(Wastewater treatment system operator, Medical appliance technician)</td>
+                    <td>96.25</td>
+                    <td>1.91</td>
+                    <td>98.12</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of retail sales workers, Billing and posting clerk)</td>
+                    <td>77.23</td>
+                    <td>1.90</td>
+                    <td>78.69</td>
+                    <td>25.97</td>
+                </tr>
+                <tr>
+                    <td>(Sales manager, Administrative services manager)</td>
+                    <td>50.89</td>
+                    <td>1.90</td>
+                    <td>51.88</td>
+                    <td>3.75</td>
+                </tr>
+                <tr>
+                    <td>(Wastewater treatment system operator, Filling machine operator)</td>
+                    <td>81.56</td>
+                    <td>1.90</td>
+                    <td>83.12</td>
+                    <td>33.75</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of production and operating workers, Supervisor of personal care and service workers)</td>
+                    <td>69.12</td>
+                    <td>1.88</td>
+                    <td>70.45</td>
+                    <td>13.64</td>
+                </tr>
+                <tr>
+                    <td>(Postsecondary teacher, Social and human service assistant)</td>
+                    <td>79.75</td>
+                    <td>1.85</td>
+                    <td>81.25</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td>(Management analyst, Public relations manager)</td>
+                    <td>50.33</td>
+                    <td>1.80</td>
+                    <td>51.25</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Electrical and electronic engineering technician, Medical scientist)</td>
+                    <td>98.23</td>
+                    <td>1.77</td>
+                    <td>100.00</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Project management specialist, Administrative services manager)</td>
+                    <td>69.97</td>
+                    <td>1.73</td>
+                    <td>71.25</td>
+                    <td>25.00</td>
+                </tr>
+                <tr>
+                    <td>(Electrical and electronic engineering technician, Medical and health services manager)</td>
+                    <td>97.66</td>
+                    <td>1.73</td>
+                    <td>99.38</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Web and digital interface designer, Insurance claims and policy processing clerk)</td>
+                    <td>69.19</td>
+                    <td>1.71</td>
+                    <td>70.39</td>
+                    <td>1.32</td>
+                </tr>
+                <tr>
+                    <td>(Web and digital interface designer, Advertising sales agent)</td>
+                    <td>59.58</td>
+                    <td>1.69</td>
+                    <td>60.58</td>
+                    <td>5.77</td>
+                </tr>
+                <tr>
+                    <td>(Cost estimator, Advertising sales agent)</td>
+                    <td>69.09</td>
+                    <td>1.65</td>
+                    <td>70.19</td>
+                    <td>17.30</td>
+                </tr>
+                <tr>
+                    <td>(Chemical engineer, Medical scientist)</td>
+                    <td>66.87</td>
+                    <td>1.64</td>
+                    <td>67.96</td>
+                    <td>31.58</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of non-retail sales workers, Human resources worker)</td>
+                    <td>59.56</td>
+                    <td>1.62</td>
+                    <td>60.53</td>
+                    <td>50.72</td>
+                </tr>
+                <tr>
+                    <td>(Boiler operator, Filling machine operator)</td>
+                    <td>92.61</td>
+                    <td>1.61</td>
+                    <td>94.12</td>
+                    <td>11.77</td>
+                </tr>
+                <tr>
+                    <td>(Training and development manager, Administrative services manager)</td>
+                    <td>56.53</td>
+                    <td>1.56</td>
+                    <td>57.50</td>
+                    <td>30.00</td>
+                </tr>
+                <tr>
+                    <td>(Materials engineer, Medical appliance technician)</td>
+                    <td>76.91</td>
+                    <td>1.55</td>
+                    <td>78.12</td>
+                    <td>26.25</td>
+                </tr>
+                <tr>
+                    <td>(Computer support specialist, Compliance officer)</td>
+                    <td>94.77</td>
+                    <td>1.54</td>
+                    <td>96.25</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>(Occupational health and safety specialist, Payroll and timekeeping clerk)</td>
+                    <td>93.27</td>
+                    <td>1.53</td>
+                    <td>94.70</td>
+                    <td>3.75</td>
+                </tr>
+                <tr>
+                    <td>(Chemical engineer, Pharmacist)</td>
+                    <td>60.34</td>
+                    <td>1.46</td>
+                    <td>61.25</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td>(Occupational health and safety specialist, Insurance claims and policy processing clerk)</td>
+                    <td>84.44</td>
+                    <td>1.43</td>
+                    <td>85.53</td>
+                    <td>26.32</td>
+                </tr>
+                <tr>
+                    <td>(Information security analyst, Insurance underwriter)</td>
+                    <td>79.52</td>
+                    <td>1.41</td>
+                    <td>80.62</td>
+                    <td>8.75</td>
+                </tr>
+                <tr>
+                    <td>(Management analyst, Marketing specialist)</td>
+                    <td>50.53</td>
+                    <td>1.39</td>
+                    <td>51.25</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>(Cost estimator, Insurance underwriter)</td>
+                    <td>58.58</td>
+                    <td>1.36</td>
+                    <td>59.38</td>
+                    <td>3.75</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of retail sales workers, First-line supervisor of food preparation and serving workers)</td>
+                    <td>97.27</td>
+                    <td>1.36</td>
+                    <td>98.61</td>
+                    <td>2.78</td>
+                </tr>
+                <tr>
+                    <td>(Chief executive, Real estate broker)</td>
+                    <td>80.22</td>
+                    <td>1.29</td>
+                    <td>81.25</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td>(Surgeon, Medical scientist)</td>
+                    <td>89.38</td>
+                    <td>1.29</td>
+                    <td>90.56</td>
+                    <td>12.44</td>
+                </tr>
+                <tr>
+                    <td>(Electrical and electronic engineering technician, Medical appliance technician)</td>
+                    <td>80.22</td>
+                    <td>1.29</td>
+                    <td>81.25</td>
+                    <td>10.00</td>
+                </tr>
+                <tr>
+                    <td>(Materials engineer, Psychiatric technician)</td>
+                    <td>94.12</td>
+                    <td>1.27</td>
+                    <td>95.31</td>
+                    <td>9.38</td>
+                </tr>
+                <tr>
+                    <td>(Lawyer, School psychologist)</td>
+                    <td>81.00</td>
+                    <td>1.27</td>
+                    <td>82.03</td>
+                    <td>1.56</td>
+                </tr>
+                <tr>
+                    <td>(Operation manager, Marketing manager)</td>
+                    <td>70.40</td>
+                    <td>1.24</td>
+                    <td>71.25</td>
+                    <td>42.50</td>
+                </tr>
+                <tr>
+                    <td>(Occupational health and safety specialist, Medical and health services manager)</td>
+                    <td>88.33</td>
+                    <td>1.22</td>
+                    <td>89.38</td>
+                    <td>21.25</td>
+                </tr>
+                <tr>
+                    <td>(Postsecondary teacher, Public relations specialist)</td>
+                    <td>82.72</td>
+                    <td>1.22</td>
+                    <td>83.75</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>(Facilities manager, Administrative services manager)</td>
+                    <td>59.89</td>
+                    <td>1.19</td>
+                    <td>60.62</td>
+                    <td>16.25</td>
+                </tr>
+                <tr>
+                    <td>(Sales manager, Marketing manager)</td>
+                    <td>55.59</td>
+                    <td>1.15</td>
+                    <td>56.25</td>
+                    <td>25.00</td>
+                </tr>
+                <tr>
+                    <td>(Software quality tester, Graphic designer)</td>
+                    <td>78.64</td>
+                    <td>1.14</td>
+                    <td>79.59</td>
+                    <td>15.41</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of security workers, Compliance officer)</td>
+                    <td>69.11</td>
+                    <td>1.13</td>
+                    <td>70.00</td>
+                    <td>35.00</td>
+                </tr>
+                <tr>
+                    <td>(Chemical technician, Biological scientist)</td>
+                    <td>62.47</td>
+                    <td>1.06</td>
+                    <td>63.25</td>
+                    <td>70.80</td>
+                </tr>
+                <tr>
+                    <td>(Personal financial advisor, Loan officer)</td>
+                    <td>63.67</td>
+                    <td>0.99</td>
+                    <td>64.31</td>
+                    <td>3.81</td>
+                </tr>
+                <tr>
+                    <td>(Lawyer, Mental health counselor)</td>
+                    <td>79.20</td>
+                    <td>0.99</td>
+                    <td>80.00</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>(Cost estimator, Real estate broker)</td>
+                    <td>89.73</td>
+                    <td>0.99</td>
+                    <td>90.62</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Food service manager, Lodging manager)</td>
+                    <td>97.17</td>
+                    <td>0.97</td>
+                    <td>98.12</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Logistician, School psychologist)</td>
+                    <td>93.00</td>
+                    <td>0.96</td>
+                    <td>93.91</td>
+                    <td>12.19</td>
+                </tr>
+                <tr>
+                    <td>(Lawyer, Compliance officer)</td>
+                    <td>84.81</td>
+                    <td>0.95</td>
+                    <td>85.62</td>
+                    <td>3.75</td>
+                </tr>
+                <tr>
+                    <td>(Facilities manager, Marketing manager)</td>
+                    <td>71.84</td>
+                    <td>0.95</td>
+                    <td>72.50</td>
+                    <td>15.00</td>
+                </tr>
+                <tr>
+                    <td>(Personal financial advisor, Real estate broker)</td>
+                    <td>69.35</td>
+                    <td>0.93</td>
+                    <td>70.00</td>
+                    <td>17.50</td>
+                </tr>
+                <tr>
+                    <td>(Architectural and engineering manager, Financial manager)</td>
+                    <td>90.51</td>
+                    <td>0.88</td>
+                    <td>91.25</td>
+                    <td>15.00</td>
+                </tr>
+                <tr>
+                    <td>(Management analyst, Administrative services manager)</td>
+                    <td>63.18</td>
+                    <td>0.81</td>
+                    <td>63.75</td>
+                    <td>60.00</td>
+                </tr>
+                <tr>
+                    <td>(Purchasing manager, Administrative services manager)</td>
+                    <td>49.61</td>
+                    <td>0.79</td>
+                    <td>50.00</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Operation manager, Accountant)</td>
+                    <td>77.50</td>
+                    <td>0.79</td>
+                    <td>78.12</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Director, Mental health counselor)</td>
+                    <td>70.59</td>
+                    <td>0.76</td>
+                    <td>71.25</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>(Project management specialist, Marketing manager)</td>
+                    <td>57.09</td>
+                    <td>0.72</td>
+                    <td>57.50</td>
+                    <td>7.50</td>
+                </tr>
+                <tr>
+                    <td>(Software quality tester, Operations research analyst)</td>
+                    <td>65.20</td>
+                    <td>0.72</td>
+                    <td>65.62</td>
+                    <td>36.25</td>
+                </tr>
+                <tr>
+                    <td>(Property assessor, Lodging manager)</td>
+                    <td>85.68</td>
+                    <td>0.71</td>
+                    <td>86.25</td>
+                    <td>17.50</td>
+                </tr>
+                <tr>
+                    <td>(Chemical engineer, Medical appliance technician)</td>
+                    <td>87.52</td>
+                    <td>0.69</td>
+                    <td>88.12</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Information security analyst, Operations research analyst)</td>
+                    <td>61.49</td>
+                    <td>0.67</td>
+                    <td>61.88</td>
+                    <td>58.75</td>
+                </tr>
+                <tr>
+                    <td>(Cost estimator, Loan officer)</td>
+                    <td>73.19</td>
+                    <td>0.65</td>
+                    <td>73.64</td>
+                    <td>10.09</td>
+                </tr>
+                <tr>
+                    <td>(Cutting worker, Order clerk)</td>
+                    <td>97.04</td>
+                    <td>0.64</td>
+                    <td>97.66</td>
+                    <td>1.56</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of retail sales workers, Order clerk)</td>
+                    <td>70.27</td>
+                    <td>0.61</td>
+                    <td>70.75</td>
+                    <td>25.18</td>
+                </tr>
+                <tr>
+                    <td>(Chemical technician, Medical assistant)</td>
+                    <td>97.02</td>
+                    <td>0.61</td>
+                    <td>97.62</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Photographer, Author)</td>
+                    <td>91.95</td>
+                    <td>0.59</td>
+                    <td>92.50</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Financial and investment analyst, Accountant)</td>
+                    <td>77.08</td>
+                    <td>0.56</td>
+                    <td>77.50</td>
+                    <td>12.50</td>
+                </tr>
+                <tr>
+                    <td>(Chief executive, Entertainment and recreation manager)</td>
+                    <td>63.88</td>
+                    <td>0.48</td>
+                    <td>64.19</td>
+                    <td>4.05</td>
+                </tr>
+                <tr>
+                    <td>(Property assessor, Insurance sales agent)</td>
+                    <td>80.98</td>
+                    <td>0.47</td>
+                    <td>81.37</td>
+                    <td>9.54</td>
+                </tr>
+                <tr>
+                    <td>(Information security analyst, Accountant)</td>
+                    <td>84.60</td>
+                    <td>0.47</td>
+                    <td>85.00</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>(Occupational health and safety specialist, Supervisor of personal care and service workers)</td>
+                    <td>52.04</td>
+                    <td>0.46</td>
+                    <td>52.27</td>
+                    <td>4.54</td>
+                </tr>
+                <tr>
+                    <td>(Chef, Food batchmaker)</td>
+                    <td>67.22</td>
+                    <td>0.43</td>
+                    <td>67.50</td>
+                    <td>25.00</td>
+                </tr>
+                <tr>
+                    <td>(Property assessor, Real estate broker)</td>
+                    <td>68.12</td>
+                    <td>0.42</td>
+                    <td>68.75</td>
+                    <td>10.00</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of non-retail sales workers, Insurance claims and policy processing clerk)</td>
+                    <td>52.36</td>
+                    <td>0.34</td>
+                    <td>52.63</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Computer support specialist, Loan officer)</td>
+                    <td>96.43</td>
+                    <td>0.34</td>
+                    <td>96.80</td>
+                    <td>1.28</td>
+                </tr>
+                <tr>
+                    <td>(Chemical technician, Ophthalmic medical technician)</td>
+                    <td>88.33</td>
+                    <td>0.32</td>
+                    <td>88.63</td>
+                    <td>4.54</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of retail sales workers, Supervisor of personal care and service workers)</td>
+                    <td>83.14</td>
+                    <td>0.30</td>
+                    <td>83.40</td>
+                    <td>5.94</td>
+                </tr>
+                <tr>
+                    <td>(Electrical and electronic engineering technician, Psychiatric technician)</td>
+                    <td>99.44</td>
+                    <td>0.30</td>
+                    <td>100.00</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Web and digital interface designer, Operations research analyst)</td>
+                    <td>84.16</td>
+                    <td>0.28</td>
+                    <td>84.38</td>
+                    <td>21.25</td>
+                </tr>
+                <tr>
+                    <td>(Logistician, Compliance officer)</td>
+                    <td>75.42</td>
+                    <td>0.28</td>
+                    <td>75.62</td>
+                    <td>3.75</td>
+                </tr>
+                <tr>
+                    <td>(Personal financial advisor, Entertainment and recreation manager)</td>
+                    <td>77.38</td>
+                    <td>0.27</td>
+                    <td>77.71</td>
+                    <td>4.05</td>
+                </tr>
+                <tr>
+                    <td>(Cook, Food batchmaker)</td>
+                    <td>76.71</td>
+                    <td>0.26</td>
+                    <td>76.88</td>
+                    <td>41.25</td>
+                </tr>
+                <tr>
+                    <td>(Occupational health and safety specialist, Advertising sales agent)</td>
+                    <td>74.83</td>
+                    <td>0.22</td>
+                    <td>75.00</td>
+                    <td>11.54</td>
+                </tr>
+                <tr>
+                    <td>(Printing press operator, Filling machine operator)</td>
+                    <td>88.37</td>
+                    <td>0.21</td>
+                    <td>89.38</td>
+                    <td>21.25</td>
+                </tr>
+                <tr>
+                    <td>(Occupational health and safety specialist, Insurance sales agent)</td>
+                    <td>71.59</td>
+                    <td>0.15</td>
+                    <td>72.73</td>
+                    <td>13.64</td>
+                </tr>
+                <tr>
+                    <td>(Computer systems analyst, Operations research analyst)</td>
+                    <td>62.31</td>
+                    <td>0.15</td>
+                    <td>62.50</td>
+                    <td>40.00</td>
+                </tr>
+                <tr>
+                    <td>(Web and digital interface designer, Graphic designer)</td>
+                    <td>62.38</td>
+                    <td>0.12</td>
+                    <td>62.45</td>
+                    <td>61.59</td>
+                </tr>
+                <tr>
+                    <td>(Lawyer, Insurance underwriter)</td>
+                    <td>52.98</td>
+                    <td>0.11</td>
+                    <td>53.12</td>
+                    <td>6.25</td>
+                </tr>
+                <tr>
+                    <td>(Chemical technician, Pharmacy technician)</td>
+                    <td>99.77</td>
+                    <td>0.10</td>
+                    <td>100.00</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Lawyer, Accountant)</td>
+                    <td>92.84</td>
+                    <td>0.10</td>
+                    <td>93.12</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Chemical engineer, Medical and health services manager)</td>
+                    <td>98.85</td>
+                    <td>0.07</td>
+                    <td>99.38</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Cost estimator, Accountant)</td>
+                    <td>57.93</td>
+                    <td>-0.02</td>
+                    <td>58.12</td>
+                    <td>3.75</td>
+                </tr>
+                <tr>
+                    <td>(Cost estimator, Graphic designer)</td>
+                    <td>90.08</td>
+                    <td>-0.05</td>
+                    <td>90.47</td>
+                    <td>3.85</td>
+                </tr>
+                <tr>
+                    <td>(Management analyst, Marketing manager)</td>
+                    <td>52.46</td>
+                    <td>-0.08</td>
+                    <td>52.50</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td>(Food service manager, Medical and health services manager)</td>
+                    <td>96.84</td>
+                    <td>-0.15</td>
+                    <td>97.50</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Counter and rental clerk, Payroll and timekeeping clerk)</td>
+                    <td>70.09</td>
+                    <td>-0.15</td>
+                    <td>70.17</td>
+                    <td>40.90</td>
+                </tr>
+                <tr>
+                    <td>(Logistician, Tutor)</td>
+                    <td>88.95</td>
+                    <td>-0.17</td>
+                    <td>89.38</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Training and development manager, Marketing manager)</td>
+                    <td>56.80</td>
+                    <td>-0.20</td>
+                    <td>56.88</td>
+                    <td>61.25</td>
+                </tr>
+                <tr>
+                    <td>(Property assessor, Accountant)</td>
+                    <td>56.11</td>
+                    <td>-0.23</td>
+                    <td>56.25</td>
+                    <td>10.00</td>
+                </tr>
+                <tr>
+                    <td>(Property assessor, Insurance underwriter)</td>
+                    <td>61.00</td>
+                    <td>-0.40</td>
+                    <td>61.25</td>
+                    <td>10.00</td>
+                </tr>
+                <tr>
+                    <td>(Director, Editor)</td>
+                    <td>62.24</td>
+                    <td>-0.42</td>
+                    <td>62.50</td>
+                    <td>15.00</td>
+                </tr>
+                <tr>
+                    <td>(Cafeteria attendant, Food preparation worker)</td>
+                    <td>63.33</td>
+                    <td>-0.42</td>
+                    <td>63.75</td>
+                    <td>32.50</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of non-retail sales workers, Supervisor of personal care and service workers)</td>
+                    <td>54.28</td>
+                    <td>-0.48</td>
+                    <td>54.55</td>
+                    <td>9.09</td>
+                </tr>
+                <tr>
+                    <td>(Operation manager, Financial manager)</td>
+                    <td>79.59</td>
+                    <td>-0.50</td>
+                    <td>80.00</td>
+                    <td>17.50</td>
+                </tr>
+                <tr>
+                    <td>(Director, Translator)</td>
+                    <td>78.99</td>
+                    <td>-0.51</td>
+                    <td>79.38</td>
+                    <td>16.25</td>
+                </tr>
+                <tr>
+                    <td>(Cook, Baker)</td>
+                    <td>87.60</td>
+                    <td>-0.51</td>
+                    <td>88.12</td>
+                    <td>23.75</td>
+                </tr>
+                <tr>
+                    <td>(Computer numerically controlled tool operator, Filling machine operator)</td>
+                    <td>74.64</td>
+                    <td>-0.52</td>
+                    <td>75.00</td>
+                    <td>42.50</td>
+                </tr>
+                <tr>
+                    <td>(Project management specialist, Operations research analyst)</td>
+                    <td>66.60</td>
+                    <td>-0.54</td>
+                    <td>66.88</td>
+                    <td>56.25</td>
+                </tr>
+                <tr>
+                    <td>(Cutting worker, Food preparation worker)</td>
+                    <td>99.42</td>
+                    <td>-0.58</td>
+                    <td>100.00</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Purchasing manager, Marketing manager)</td>
+                    <td>62.71</td>
+                    <td>-0.66</td>
+                    <td>63.12</td>
+                    <td>11.25</td>
+                </tr>
+                <tr>
+                    <td>(Police officer, Probation officer)</td>
+                    <td>58.98</td>
+                    <td>-0.67</td>
+                    <td>59.38</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Director, Artist)</td>
+                    <td>93.12</td>
+                    <td>-0.68</td>
+                    <td>93.75</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Correctional officer, Probation officer)</td>
+                    <td>54.00</td>
+                    <td>-0.69</td>
+                    <td>54.38</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Food service manager, Entertainment and recreation manager)</td>
+                    <td>88.58</td>
+                    <td>-0.69</td>
+                    <td>89.19</td>
+                    <td>8.11</td>
+                </tr>
+                <tr>
+                    <td>(Property assessor, Loan officer)</td>
+                    <td>53.37</td>
+                    <td>-0.70</td>
+                    <td>53.75</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>(Director, Author)</td>
+                    <td>83.08</td>
+                    <td>-0.73</td>
+                    <td>83.75</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>(Chef, Baker)</td>
+                    <td>88.00</td>
+                    <td>-0.74</td>
+                    <td>88.75</td>
+                    <td>22.50</td>
+                </tr>
+                <tr>
+                    <td>(Chemical technician, Phlebotomist)</td>
+                    <td>82.67</td>
+                    <td>-0.80</td>
+                    <td>83.33</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of non-retail sales workers, Payroll and timekeeping clerk)</td>
+                    <td>71.05</td>
+                    <td>-0.80</td>
+                    <td>71.59</td>
+                    <td>40.99</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of housekeeping and janitorial workers, First-line supervisor of office and administrative support workers)</td>
+                    <td>80.03</td>
+                    <td>-0.85</td>
+                    <td>80.68</td>
+                    <td>11.37</td>
+                </tr>
+                <tr>
+                    <td>(Lawyer, Real estate broker)</td>
+                    <td>92.28</td>
+                    <td>-0.89</td>
+                    <td>93.12</td>
+                    <td>8.75</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of retail sales workers, Payroll and timekeeping clerk)</td>
+                    <td>84.56</td>
+                    <td>-0.90</td>
+                    <td>85.33</td>
+                    <td>7.13</td>
+                </tr>
+                <tr>
+                    <td>(Chemists and materials scientist, Medical scientist)</td>
+                    <td>58.16</td>
+                    <td>-0.91</td>
+                    <td>58.80</td>
+                    <td>82.40</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of retail sales workers, Insurance sales agent)</td>
+                    <td>57.80</td>
+                    <td>-0.91</td>
+                    <td>58.39</td>
+                    <td>15.03</td>
+                </tr>
+                <tr>
+                    <td>(Chemical technician, Miscellaneous health technician)</td>
+                    <td>80.24</td>
+                    <td>-0.94</td>
+                    <td>80.95</td>
+                    <td>9.53</td>
+                </tr>
+                <tr>
+                    <td>(Financial and investment analyst, Financial manager)</td>
+                    <td>60.02</td>
+                    <td>-0.94</td>
+                    <td>60.62</td>
+                    <td>31.25</td>
+                </tr>
+                <tr>
+                    <td>(Postsecondary teacher, Special education teacher)</td>
+                    <td>62.89</td>
+                    <td>-0.96</td>
+                    <td>63.44</td>
+                    <td>26.25</td>
+                </tr>
+                <tr>
+                    <td>(Purchasing manager, Accountant)</td>
+                    <td>49.50</td>
+                    <td>-1.00</td>
+                    <td>50.00</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>(Management analyst, Operations research analyst)</td>
+                    <td>67.39</td>
+                    <td>-1.18</td>
+                    <td>68.12</td>
+                    <td>51.25</td>
+                </tr>
+                <tr>
+                    <td>(Photographer, Graphic designer)</td>
+                    <td>93.77</td>
+                    <td>-1.20</td>
+                    <td>94.90</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of retail sales workers, Advertising sales agent)</td>
+                    <td>73.72</td>
+                    <td>-1.28</td>
+                    <td>74.67</td>
+                    <td>10.46</td>
+                </tr>
+                <tr>
+                    <td>(Chemical technician, Medical appliance technician)</td>
+                    <td>85.78</td>
+                    <td>-1.28</td>
+                    <td>86.88</td>
+                    <td>16.25</td>
+                </tr>
+                <tr>
+                    <td>(Photographer, Artist)</td>
+                    <td>88.19</td>
+                    <td>-1.30</td>
+                    <td>89.38</td>
+                    <td>8.75</td>
+                </tr>
+                <tr>
+                    <td>(Sales manager, Financial manager)</td>
+                    <td>54.28</td>
+                    <td>-1.31</td>
+                    <td>55.00</td>
+                    <td>12.50</td>
+                </tr>
+                <tr>
+                    <td>(Postsecondary teacher, Social and community service manager)</td>
+                    <td>79.55</td>
+                    <td>-1.33</td>
+                    <td>80.62</td>
+                    <td>3.75</td>
+                </tr>
+                <tr>
+                    <td>(Director, Interior designer)</td>
+                    <td>86.37</td>
+                    <td>-1.34</td>
+                    <td>87.50</td>
+                    <td>7.50</td>
+                </tr>
+                <tr>
+                    <td>(Cafeteria attendant, First-line supervisor of food preparation and serving workers)</td>
+                    <td>54.25</td>
+                    <td>-1.36</td>
+                    <td>55.00</td>
+                    <td>30.00</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of non-retail sales workers, Insurance sales agent)</td>
+                    <td>49.52</td>
+                    <td>-1.44</td>
+                    <td>50.25</td>
+                    <td>4.06</td>
+                </tr>
+                <tr>
+                    <td>(Postsecondary teacher, Mental health counselor)</td>
+                    <td>79.47</td>
+                    <td>-1.44</td>
+                    <td>80.62</td>
+                    <td>3.75</td>
+                </tr>
+                <tr>
+                    <td>(Chemical technician, Pharmacist)</td>
+                    <td>87.06</td>
+                    <td>-1.55</td>
+                    <td>88.40</td>
+                    <td>23.21</td>
+                </tr>
+                <tr>
+                    <td>(Facilities manager, Financial manager)</td>
+                    <td>75.02</td>
+                    <td>-1.60</td>
+                    <td>76.25</td>
+                    <td>15.00</td>
+                </tr>
+                <tr>
+                    <td>(Retail salesperson, Cashier)</td>
+                    <td>71.18</td>
+                    <td>-1.60</td>
+                    <td>72.12</td>
+                    <td>52.98</td>
+                </tr>
+                <tr>
+                    <td>(Purchasing manager, Financial manager)</td>
+                    <td>49.80</td>
+                    <td>-1.62</td>
+                    <td>50.62</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of housekeeping and janitorial workers, Supervisor of personal care and service workers)</td>
+                    <td>63.69</td>
+                    <td>-1.64</td>
+                    <td>64.77</td>
+                    <td>20.45</td>
+                </tr>
+                <tr>
+                    <td>(Management analyst, Accountant)</td>
+                    <td>68.86</td>
+                    <td>-1.65</td>
+                    <td>70.00</td>
+                    <td>15.00</td>
+                </tr>
+                <tr>
+                    <td>(Logistician, Loan officer)</td>
+                    <td>82.89</td>
+                    <td>-1.69</td>
+                    <td>84.31</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of police and detectives, Probation officer)</td>
+                    <td>54.67</td>
+                    <td>-1.71</td>
+                    <td>55.62</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Lawyer, Loan officer)</td>
+                    <td>70.57</td>
+                    <td>-1.74</td>
+                    <td>71.83</td>
+                    <td>2.56</td>
+                </tr>
+                <tr>
+                    <td>(Retail salesperson, Order clerk)</td>
+                    <td>85.81</td>
+                    <td>-1.86</td>
+                    <td>87.31</td>
+                    <td>25.37</td>
+                </tr>
+                <tr>
+                    <td>(Cutting worker, Filling machine operator)</td>
+                    <td>83.36</td>
+                    <td>-1.89</td>
+                    <td>85.00</td>
+                    <td>27.50</td>
+                </tr>
+                <tr>
+                    <td>(Project management specialist, Financial manager)</td>
+                    <td>65.60</td>
+                    <td>-1.90</td>
+                    <td>66.88</td>
+                    <td>11.25</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of security workers, Probation officer)</td>
+                    <td>58.83</td>
+                    <td>-1.95</td>
+                    <td>60.00</td>
+                    <td>2.50</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of correctional officers, Probation officer)</td>
+                    <td>54.42</td>
+                    <td>-2.17</td>
+                    <td>55.62</td>
+                    <td>3.75</td>
+                </tr>
+                <tr>
+                    <td>(Chemical technician, Medical scientist)</td>
+                    <td>65.85</td>
+                    <td>-2.31</td>
+                    <td>67.25</td>
+                    <td>65.51</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of housekeeping and janitorial workers, First-line supervisor of food preparation and serving workers)</td>
+                    <td>84.35</td>
+                    <td>-2.36</td>
+                    <td>86.36</td>
+                    <td>18.18</td>
+                </tr>
+                <tr>
+                    <td>(Chemical technician, Medical and health services manager)</td>
+                    <td>96.69</td>
+                    <td>-2.71</td>
+                    <td>99.38</td>
+                    <td>1.25</td>
+                </tr>
+                <tr>
+                    <td>(Postsecondary teacher, School psychologist)</td>
+                    <td>54.12</td>
+                    <td>-2.72</td>
+                    <td>55.62</td>
+                    <td>5.63</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of housekeeping and janitorial workers, Medical and health services manager)</td>
+                    <td>90.61</td>
+                    <td>-2.76</td>
+                    <td>93.18</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Retail salesperson, Real estate broker)</td>
+                    <td>97.14</td>
+                    <td>-2.85</td>
+                    <td>100.00</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>(Training and development manager, Financial manager)</td>
+                    <td>52.08</td>
+                    <td>-3.13</td>
+                    <td>53.75</td>
+                    <td>7.50</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of non-retail sales workers, Advertising sales agent)</td>
+                    <td>56.02</td>
+                    <td>-3.42</td>
+                    <td>57.97</td>
+                    <td>26.38</td>
+                </tr>
+                <tr>
+                    <td>(Cafeteria attendant, Waiter)</td>
+                    <td>75.40</td>
+                    <td>-3.46</td>
+                    <td>77.97</td>
+                    <td>24.05</td>
+                </tr>
+                <tr>
+                    <td>(Postsecondary teacher, Teaching assistant)</td>
+                    <td>60.31</td>
+                    <td>-3.59</td>
+                    <td>62.50</td>
+                    <td>37.50</td>
+                </tr>
+                <tr>
+                    <td>(Management analyst, Financial manager)</td>
+                    <td>57.66</td>
+                    <td>-3.83</td>
+                    <td>60.00</td>
+                    <td>50.00</td>
+                </tr>
+                <tr>
+                    <td>(Postsecondary teacher, Insurance underwriter)</td>
+                    <td>82.50</td>
+                    <td>-4.35</td>
+                    <td>86.25</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td>(First-line supervisor of housekeeping and janitorial workers, Lodging manager)</td>
+                    <td>79.99</td>
+                    <td>-4.35</td>
+                    <td>83.64</td>
+                    <td>10.00</td>
+                </tr>
+                <tr>
+                    <td>(Cafeteria attendant, Fast food and counter worker)</td>
+                    <td>65.13</td>
+                    <td>-4.38</td>
+                    <td>68.02</td>
+                    <td>63.97</td>
+                </tr>
+
             `;
         } else if (option === 'Vbias') {
             content = `
