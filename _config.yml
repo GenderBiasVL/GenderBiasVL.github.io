@@ -21,7 +21,6 @@ author: GenderBiasVL Team
 
 navbar-links:
   Home: "index"
-  Docs: "https://openreview.net/"
   Dataset: "dataset"
   LeaderBoards:
     - Open-source LVLMs: "open_sourceLVLMs"
@@ -42,6 +41,7 @@ navbar-links:
     - Shikra: "Shikra"
     - LLaVARLHF: "LLaVARLHF"
     - RLHFV: "RLHFV"
+  Analysis: "Analysis"
   Github: "https://github.com/GenderBiasVL"
   # About Me: "aboutme"
   # Resources:
