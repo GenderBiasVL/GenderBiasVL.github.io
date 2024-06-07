@@ -17,7 +17,9 @@ permalink: /InstructBLIP.html
 <script>
     function changeTable(option) {
         const table = document.getElementById('contentTable');
-        let content = '';
+        let currentOption = 'VLbias';
+        let sortDirection = 'asc';
+        let sortColumnIndex = 0;
 
         if (option === 'VLbias') {
             content = `
