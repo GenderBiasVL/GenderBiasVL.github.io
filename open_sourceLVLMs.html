@@ -46,7 +46,7 @@ permalink: /open_sourceLVLMs.html
         color: #007bff; /* 标题悬停时的颜色变化 */
     }
 </style>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<h1>Open-source LVLMs</h1>
 <p>We benchmark 15 commonly used open-source LVLMs by single-turn Perplexity (PPL) 
     inferencer, which confines their output to options and computes the probability for 
     each option.
@@ -55,12 +55,12 @@ permalink: /open_sourceLVLMs.html
 <table id="VLTable" class="three-line-table">
     <thead>
         <tr>
-            <th onclick="sortTable('VLTable', 0)">Model</th>
-            <th onclick="sortTable('VLTable', 1)">I<sub>pss</sub></th>
-            <th onclick="sortTable('VLTable', 2)">B<sub>ovl</sub></th>
-            <th onclick="sortTable('VLTable', 3)">B<sub>max</sub></th>
-            <th onclick="sortTable('VLTable', 4)">Acc</th>
-            <th onclick="sortTable('VLTable', 5)">ΔAcc</th>
+            <th onclick="sortTable('VLTable', 0)">$$Model$$</th>
+            <th onclick="sortTable('VLTable', 1)">$$I_{pss}$$</th>
+            <th onclick="sortTable('VLTable', 2)">$$B_{ovl}$$</th>
+            <th onclick="sortTable('VLTable', 3)">$$B_{max}$$</th>
+            <th onclick="sortTable('VLTable', 4)">$$Acc$$</th>
+            <th onclick="sortTable('VLTable', 5)">$$\delta Acc$$</th>
         </tr>
     </thead>
     <tbody>
@@ -186,17 +186,17 @@ permalink: /open_sourceLVLMs.html
         </tr>
     </tbody>
 </table>
-
+<br/>
 <h2>Results (in %) under visual unimodal bias (V-Bias) evaluation</h2>
 <table id="VTable" class="three-line-table">
     <thead>
         <tr>
-            <th onclick="sortTable('VTable', 0)">Model</th>
-            <th onclick="sortTable('VTable', 1)">I<sub>pss</sub></th>
-            <th onclick="sortTable('VTable', 2)">B<sub>ovl</sub></th>
-            <th onclick="sortTable('VTable', 3)">B<sub>max</sub></th>
-            <th onclick="sortTable('VTable', 4)">Acc</th>
-            <th onclick="sortTable('VTable', 5)">ΔAcc</th>
+            <th onclick="sortTable('VTable', 0)">$$Model$$</th>
+            <th onclick="sortTable('VTable', 1)">$$I_{pss}$$</th>
+            <th onclick="sortTable('VTable', 2)">$$B_{ovl}$$</th>
+            <th onclick="sortTable('VTable', 3)">$$B_{max}$$</th>
+            <th onclick="sortTable('VTable', 4)">$$Acc$$</th>
+            <th onclick="sortTable('VTable', 5)">$$\delta Acc$$</th>
         </tr>
     </thead>
     <tbody>
@@ -322,17 +322,17 @@ permalink: /open_sourceLVLMs.html
         </tr>
     </tbody>
 </table>
-
+<br/>
 <h2>Results (in %) under language unimodal bias (L-Bias) evaluation</h2>
 <table id="LTable" class="three-line-table">
     <thead>
         <tr>
-            <th onclick="sortTable('LTable', 0)">Model</th>
-            <th onclick="sortTable('LTable', 1)">I<sub>pss</sub></th>
-            <th onclick="sortTable('LTable', 2)">B<sub>ovl</sub></th>
-            <th onclick="sortTable('LTable', 3)">B<sub>max</sub></th>
-            <th onclick="sortTable('LTable', 4)">Acc</th>
-            <th onclick="sortTable('LTable', 5)">ΔAcc</th>
+            <th onclick="sortTable('LTable', 0)">$$Model$$</th>
+            <th onclick="sortTable('LTable', 1)">$$I_{pss}$$</th>
+            <th onclick="sortTable('LTable', 2)">$$B_{ovl}$$</th>
+            <th onclick="sortTable('LTable', 3)">$$B_{max}$$</th>
+            <th onclick="sortTable('LTable', 4)">$$Acc$$</th>
+            <th onclick="sortTable('LTable', 5)">$$\delta Acc$$</th>
         </tr>
     </thead>
     <tbody>
