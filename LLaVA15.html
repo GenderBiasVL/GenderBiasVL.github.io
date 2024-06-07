@@ -1,0 +1,160 @@
+---
+layout: default
+title: 'Kosmos2'
+permalink: /Kosmos2.html
+---
+
+<div class="buttons">
+    <button onclick="changeTable('VLbias')">VLbias</button>
+    <button onclick="changeTable('Vbias')">Vbias</button>
+    <button onclick="changeTable('Lbias')">Lbias</button>
+</div>
+
+<table id="contentTable" class="three-line-table">
+    <!-- 表格内容会在这里更新 -->
+</table>
+
+<script>
+    let currentOption = 'VLbias';
+    let sortDirection = 'asc';
+    let sortColumnIndex = 0;
+    function changeTable(option) {
+        const table = document.getElementById('contentTable');
+
+        if (option === 'VLbias') {
+            content = `
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0)">$$(occ_{m}, occ_{f})$$</th>
+                        <th onclick="sortTable(1)">$$Ipss$$</th>
+                        <th onclick="sortTable(2)">$$B_{pair}$$</th>
+                        <th onclick="sortTable(3)">$$Acc$$</th>
+                        <th onclick="sortTable(4)">$$\\Delta Acc$$</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            `;
+        } else if (option === 'Vbias') {
+            content = `
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0)">$$(occ_{m}, occ_{f})$$</th>
+                        <th onclick="sortTable(1)">$$Ipss$$</th>
+                        <th onclick="sortTable(2)">$$B_{pair}$$</th>
+                        <th onclick="sortTable(3)">$$Acc$$</th>
+                        <th onclick="sortTable(4)">$$\\Delta Acc$$</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            `;
+        } else if (option === 'Lbias') {
+            content = `
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0)">$$(occ_{m}, occ_{f})$$</th>
+                        <th onclick="sortTable(1)">$$Ipss$$</th>
+                        <th onclick="sortTable(2)">$$B_{pair}$$</th>
+                        <th onclick="sortTable(3)">$$Acc$$</th>
+                        <th onclick="sortTable(4)">$$\\Delta Acc$$</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            `;
+        }
+
+        table.innerHTML = content;
+        sortDirection = '0';
+        sortColumnIndex = 0;
+        setSortingIcon(sortColumnIndex, sortDirection);
+        MathJax.typeset(); // 重新渲染公式
+    }
+    function sortTable(columnIndex) {
+        const table = document.getElementById('contentTable');
+        const rows = Array.from(table.querySelectorAll('tbody tr'));
+        const isAsc = sortDirection === 'asc';
+
+        rows.sort((rowA, rowB) => {
+            const cellA = rowA.cells[columnIndex].innerText;
+            const cellB = rowB.cells[columnIndex].innerText;
+
+            if (cellA < cellB) return isAsc ? -1 : 1;
+            if (cellA > cellB) return isAsc ? 1 : -1;
+            return 0;
+        });
+
+        sortDirection = isAsc ? 'desc' : 'asc';
+        sortColumnIndex = columnIndex;
+        setSortingIcon(columnIndex, sortDirection);
+
+        const tbody = table.querySelector('tbody');
+        rows.forEach(row => tbody.appendChild(row));
+    }
+
+    function setSortingIcon(columnIndex, direction) {
+        const headers = document.querySelectorAll("#contentTable th");
+        headers.forEach((header, index) => {
+            header.classList.remove("asc", "desc");
+            if (index === columnIndex) {
+                header.classList.add(direction);
+            }
+        });
+    }
+    // 初始化表格内容
+    changeTable('VLbias');
+</script>
+
+<style>
+    .buttons {
+        margin-bottom: 20px;
+    }
+    .buttons button {
+        margin-right: 10px;
+    }
+    .three-line-table {
+        width: 100%;
+        border-collapse: collapse; /* 边框合并 */
+    }
+    .three-line-table th, .three-line-table td {
+        border: none; /* 清除单元格的默认边框 */
+        padding: 8px; /* 单元格内边距 */
+        text-align: left; /* 文本左对齐 */
+    }
+    .three-line-table thead {
+        background-color: #f2f2f2; /* 表头背景色 */
+    }
+    .three-line-table thead tr th {
+        border-bottom: 2px solid #000; /* 表头底部边框 */
+        cursor: pointer;
+        position: relative;
+        padding-right: 20px;
+    }
+    .three-line-table tbody tr {
+        border-bottom: 1px solid #ddd; /* 行分隔线 */
+    }
+    .three-line-table tbody tr:last-child {
+        border-bottom: 2px solid #000; /* 最后一行的底部边框 */
+    }
+    th::after {
+        content: ' ';
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 5px solid transparent;
+    }
+    th.asc::after {
+        border-bottom-color: #000;
+    }
+    th.desc::after {
+        border-top-color: #000;
+    }
+    th:hover {
+        color: #007bff; /* 标题悬停时的颜色变化 */
+    }
+</style>
