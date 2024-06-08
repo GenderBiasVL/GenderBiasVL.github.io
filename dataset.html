@@ -5,12 +5,12 @@ permalink: /dataset.html
 ---
 
 <div id="content">
-    <p>The GenderBias-<i style="font-style: italic;">VL</i> dataset is available at<a href="https://huggingface.co/datasets/xiaoyisong/GenderBias-VL" target="_blank" class="text_muted">https://huggingface.co/datasets/xiaoyisong/GenderBias-VL</a></p>
-    <h1>Occupation list</h1>
+    <p>The GenderBias-<i style="font-style: italic;">VL</i> dataset is available at <a href="https://huggingface.co/datasets/xiaoyisong/GenderBias-VL" target="_blank" class="text_muted">https://huggingface.co/datasets/xiaoyisong/GenderBias-VL</a>.</p>
+    <h1 id="1">Occupation list</h1>
     <p>We utilize 248 occupations from the U.S. Labor Force Statistics, which include gender proportion data. 
         After applying the stereotyped occupation pairs identification, 177 occupations remained. 
         Among these, 92 are female-dominated occupations and 85 are male-dominated occupations.</p>
-    <h3>92 female-dominated-occupations</h3>
+    <h3 id="2">92 female-dominated-occupations</h3>
     <table class="three-line-table">
         <tbody>
             <tr>
@@ -21,7 +21,7 @@ permalink: /dataset.html
         </tbody>
     </table>
     <br/>
-    <h3>85 male-dominated occupations</h3>
+    <h3 id="3">85 male-dominated occupations</h3>
     <table class="three-line-table">
         <tbody>
             <tr>
@@ -32,7 +32,7 @@ permalink: /dataset.html
         </tbody>
     </table>
     <br/>
-    <h1>Stereotyped occupation pairs</h1>
+    <h1 id="4">Stereotyped occupation pairs</h1>
     <table class="three-line-table">
         <thead>
             <tr>
@@ -759,7 +759,7 @@ permalink: /dataset.html
         </tr>
     </table> -->
     <br/>
-    <h1>Examples of counterfactual visual question pairs</h1>
+    <h1 id="5">Examples of counterfactual visual question pairs</h1>
     <p>The upper half shows <i style="font-style: italic;">aircraft pilot</i> and <i style="font-style: italic;">flight attendant</i> occupation pairs, 
         while the lower half depicts <i style="font-style: italic;">chief executive</i> and <i style="font-style: italic;">executive secretary</i> occupation pairs. 
         In each pair, the left image is the base image, and the right is the counterfactual image, with their occupations <i style="font-weight: bold;">bolded</i> in the options.</p>
@@ -770,7 +770,7 @@ permalink: /dataset.html
     <img src="{{ 'assets/img/examples1.png' | relative_url }}" alt="Image 2">
 </div>
 <div id="toc">
-    <h2>Table of Contents</h2>
+    <h2>目录</h2>
     <ul>
         <!-- This will be filled dynamically -->
     </ul>
@@ -785,10 +785,11 @@ permalink: /dataset.html
         headings.forEach(function (heading) {
             var level = parseInt(heading.tagName.substring(1));
             var text = heading.innerText;
+            var id = heading.id; // 获取标题的唯一ID
             var listItem = document.createElement('li');
             var link = document.createElement('a');
             link.textContent = text;
-            link.setAttribute('href', '#' + heading.id);
+            link.setAttribute('href', '#' + id); // 使用标题的ID作为链接的目标
             listItem.appendChild(link);
 
             // Add appropriate class based on level
@@ -847,9 +848,9 @@ permalink: /dataset.html
         #toc {
         position: fixed;
         left: 0;
-        top: 50%;
+        top: 30%;
+        width: 10%;
         transform: translateY(-50%);
-        background-color: #f0f0f0;
         padding: 10px;
         border-right: 1px solid #ccc;
         z-index: 999;
