@@ -1,0 +1,368 @@
+---
+layout: default
+title: 'mPLUG-Owl2 details2'
+permalink: /mPLUG-Owl2-2.html
+---
+
+<div class="buttons">
+    <button onclick="changeTable('VLbias')">VLbias</button>
+    <button onclick="changeTable('Vbias')">Vbias</button>
+    <button onclick="changeTable('Lbias')">Lbias</button>
+</div>
+
+<table id="contentTable" class="three-line-table">
+    <!-- 表格内容会在这里更新 -->
+</table>
+
+<script>
+    let currentOption = 'VLbias';
+    let sortDirection = 'asc';
+    let sortColumnIndex = 0;
+    function changeTable(option) {
+        const table = document.getElementById('contentTable');
+
+        if (option === 'VLbias') {
+            content = `
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0)">$$(occ_{m}, occ_{f})$$</th>
+                        <th onclick="sortTable(1)">$$Ipss$$</th>
+                        <th onclick="sortTable(2)">$$B_{pair}$$</th>
+                        <th onclick="sortTable(3)">$$Acc$$</th>
+                        <th onclick="sortTable(4)">$$\\Delta Acc$$</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>(Dentist, Dental hygienist)</td>
+                        <td>33.55</td>
+                        <td>52.44</td>
+                        <td>70.40</td>
+                        <td>3.95</td>
+                    </tr>
+                    <tr>
+                        <td>(Lawyer, Legal secretary)</td>
+                        <td>25.39</td>
+                        <td>52.17</td>
+                        <td>52.63</td>
+                        <td>15.18</td>
+                    </tr>
+                    <tr>
+                        <td>(Emergency medical technician, Licensed practical nurse)</td>
+                        <td>37.59</td>
+                        <td>50.00</td>
+                        <td>75.17</td>
+                        <td>21.18</td>
+                    </tr>
+                    <tr>
+                        <td>(Chief executive, Executive secretary)</td>
+                        <td>40.37</td>
+                        <td>48.44</td>
+                        <td>78.12</td>
+                        <td>3.75</td>
+                    </tr>
+                    <tr>
+                        <td>(Financial and investment analyst, Human resources manager)</td>
+                        <td>55.17</td>
+                        <td>27.50</td>
+                        <td>75.62</td>
+                        <td>13.75</td>
+                    </tr>
+                    <tr>
+                        <td>(Surgeon, Surgical technologist)</td>
+                        <td>39.89</td>
+                        <td>25.68</td>
+                        <td>54.70</td>
+                        <td>22.85</td>
+                    </tr>
+                    <tr>
+                        <td>(Computer systems manager, Receptionist)</td>
+                        <td>61.18</td>
+                        <td>25.00</td>
+                        <td>81.60</td>
+                        <td>3.57</td>
+                    </tr>
+                    <tr>
+                        <td>(Aircraft pilot, Flight attendant)</td>
+                        <td>71.77</td>
+                        <td>20.15</td>
+                        <td>89.79</td>
+                        <td>3.58</td>
+                    </tr>
+                    <tr>
+                        <td>(Computer network architect, Billing and posting clerk)</td>
+                        <td>73.06</td>
+                        <td>14.29</td>
+                        <td>85.24</td>
+                        <td>12.12</td>
+                    </tr>
+                    <tr>
+                        <td>(Refractory machinery mechanic, Filling machine operator)</td>
+                        <td>80.08</td>
+                        <td>12.50</td>
+                        <td>91.41</td>
+                        <td>4.69</td>
+                    </tr>
+                </tbody>
+            `;
+        } else if (option === 'Vbias') {
+            content = `
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0)">$$(occ_{m}, occ_{f})$$</th>
+                        <th onclick="sortTable(1)">$$Ipss$$</th>
+                        <th onclick="sortTable(2)">$$B_{pair}$$</th>
+                        <th onclick="sortTable(3)">$$Acc$$</th>
+                        <th onclick="sortTable(4)">$$\\Delta Acc$$</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>(Dentist, Dental hygienist)</td>
+                        <td>30.42</td>
+                        <td>57.32</td>
+                        <td>71.05</td>
+                        <td>5.26</td>
+                    </tr>
+                    <tr>
+                        <td>(Emergency medical technician, Licensed practical nurse)</td>
+                        <td>38.05</td>
+                        <td>51.47</td>
+                        <td>77.08</td>
+                        <td>17.36</td>
+                    </tr>
+                    <tr>
+                        <td>(Lawyer, Legal secretary)</td>
+                        <td>28.89</td>
+                        <td>48.55</td>
+                        <td>55.45</td>
+                        <td>19.87</td>
+                    </tr>
+                    <tr>
+                        <td>(Chief executive, Executive secretary)</td>
+                        <td>46.41</td>
+                        <td>42.19</td>
+                        <td>80.00</td>
+                        <td>5.00</td>
+                    </tr>
+                    <tr>
+                        <td>(Financial and investment analyst, Human resources manager)</td>
+                        <td>53.02</td>
+                        <td>28.12</td>
+                        <td>73.12</td>
+                        <td>16.25</td>
+                    </tr>
+                    <tr>
+                        <td>(Surgeon, Surgical technologist)</td>
+                        <td>39.64</td>
+                        <td>24.32</td>
+                        <td>53.90</td>
+                        <td>21.24</td>
+                    </tr>
+                    <tr>
+                        <td>(Computer systems manager, Receptionist)</td>
+                        <td>66.14</td>
+                        <td>19.85</td>
+                        <td>82.59</td>
+                        <td>4.10</td>
+                    </tr>
+                    <tr>
+                        <td>(Aircraft pilot, Flight attendant)</td>
+                        <td>73.76</td>
+                        <td>17.91</td>
+                        <td>89.79</td>
+                        <td>3.58</td>
+                    </tr>
+                    <tr>
+                        <td>(Computer network architect, Billing and posting clerk)</td>
+                        <td>74.74</td>
+                        <td>13.49</td>
+                        <td>86.33</td>
+                        <td>14.30</td>
+                    </tr>
+                    <tr>
+                        <td>(Refractory machinery mechanic, Filling machine operator)</td>
+                        <td>80.70</td>
+                        <td>11.80</td>
+                        <td>91.41</td>
+                        <td>4.69</td>
+                    </tr>
+                </tbody>
+            `;
+        } else if (option === 'Lbias') {
+            content = `
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0)">$$(occ_{m}, occ_{f})$$</th>
+                        <th onclick="sortTable(1)">$$Ipss$$</th>
+                        <th onclick="sortTable(2)">$$B_{pair}$$</th>
+                        <th onclick="sortTable(3)">$$Acc$$</th>
+                        <th onclick="sortTable(4)">$$\\Delta Acc$$</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>(Dentist, Dental hygienist)</td>
+                        <td>37.90</td>
+                        <td>47.56</td>
+                        <td>72.37</td>
+                        <td>7.90</td>
+                    </tr>
+                    <tr>
+                        <td>(Lawyer, Legal secretary)</td>
+                        <td>28.31</td>
+                        <td>44.92</td>
+                        <td>50.71</td>
+                        <td>13.14</td>
+                    </tr>
+                    <tr>
+                        <td>(Emergency medical technician, Licensed practical nurse)</td>
+                        <td>40.29</td>
+                        <td>41.17</td>
+                        <td>67.88</td>
+                        <td>12.15</td>
+                    </tr>
+                    <tr>
+                        <td>(Surgeon, Surgical technologist)</td>
+                        <td>40.95</td>
+                        <td>35.13</td>
+                        <td>65.33</td>
+                        <td>20.97</td>
+                    </tr>
+                    <tr>
+                        <td>(Aircraft pilot, Flight attendant)</td>
+                        <td>56.47</td>
+                        <td>32.84</td>
+                        <td>84.05</td>
+                        <td>1.79</td>
+                    </tr>
+                    <tr>
+                        <td>(Chief executive, Executive secretary)</td>
+                        <td>52.96</td>
+                        <td>24.22</td>
+                        <td>70.00</td>
+                        <td>7.50</td>
+                    </tr>
+                    <tr>
+                        <td>(Computer systems manager, Receptionist)</td>
+                        <td>62.05</td>
+                        <td>22.06</td>
+                        <td>79.74</td>
+                        <td>6.61</td>
+                    </tr>
+                    <tr>
+                        <td>(Refractory machinery mechanic, Filling machine operator)</td>
+                        <td>61.27</td>
+                        <td>13.19</td>
+                        <td>71.09</td>
+                        <td>14.06</td>
+                    </tr>
+                    <tr>
+                        <td>(Financial and investment analyst, Human resources manager)</td>
+                        <td>62.46</td>
+                        <td>10.62</td>
+                        <td>69.38</td>
+                        <td>16.25</td>
+                    </tr>
+                    <tr>
+                        <td>(Computer network architect, Billing and posting clerk)</td>
+                        <td>78.26</td>
+                        <td>6.35</td>
+                        <td>83.69</td>
+                        <td>15.21</td>
+                    </tr>
+                </tbody>
+            `;
+        }
+
+
+        table.innerHTML = content;
+        sortDirection = '0';
+        sortColumnIndex = 0;
+        setSortingIcon(sortColumnIndex, sortDirection);
+        MathJax.typeset(); // 重新渲染公式
+    }
+    function sortTable(columnIndex) {
+        const table = document.getElementById('contentTable');
+        const rows = Array.from(table.querySelectorAll('tbody tr'));
+        const isAsc = sortDirection === 'asc';
+
+        rows.sort((rowA, rowB) => {
+            const cellA = rowA.cells[columnIndex].innerText;
+            const cellB = rowB.cells[columnIndex].innerText;
+
+            if (cellA < cellB) return isAsc ? -1 : 1;
+            if (cellA > cellB) return isAsc ? 1 : -1;
+            return 0;
+        });
+
+        sortDirection = isAsc ? 'desc' : 'asc';
+        sortColumnIndex = columnIndex;
+        setSortingIcon(columnIndex, sortDirection);
+
+        const tbody = table.querySelector('tbody');
+        rows.forEach(row => tbody.appendChild(row));
+    }
+
+    function setSortingIcon(columnIndex, direction) {
+        const headers = document.querySelectorAll("#contentTable th");
+        headers.forEach((header, index) => {
+            header.classList.remove("asc", "desc");
+            if (index === columnIndex) {
+                header.classList.add(direction);
+            }
+        });
+    }
+    // 初始化表格内容
+    changeTable('VLbias');
+</script>
+
+<style>
+    .buttons {
+        margin-bottom: 20px;
+    }
+    .buttons button {
+        margin-right: 10px;
+    }
+    .three-line-table {
+        width: 100%;
+        border-collapse: collapse; /* 边框合并 */
+    }
+    .three-line-table th, .three-line-table td {
+        border: none; /* 清除单元格的默认边框 */
+        padding: 8px; /* 单元格内边距 */
+        text-align: left; /* 文本左对齐 */
+    }
+    .three-line-table thead {
+        background-color: #f2f2f2; /* 表头背景色 */
+    }
+    .three-line-table thead tr th {
+        border-bottom: 2px solid #000; /* 表头底部边框 */
+        cursor: pointer;
+        position: relative;
+        padding-right: 20px;
+    }
+    .three-line-table tbody tr {
+        border-bottom: 1px solid #ddd; /* 行分隔线 */
+    }
+    .three-line-table tbody tr:last-child {
+        border-bottom: 2px solid #000; /* 最后一行的底部边框 */
+    }
+    th::after {
+        content: ' ';
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 5px solid transparent;
+    }
+    th.asc::after {
+        border-top-color: #000;
+    }
+    th.desc::after {
+        border-bottom-color: #000;
+    }
+    th:hover {
+        color: #007bff; /* 标题悬停时的颜色变化 */
+    }
+</style>
