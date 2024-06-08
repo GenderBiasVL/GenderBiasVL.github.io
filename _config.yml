@@ -75,7 +75,7 @@ navbar-links:
     - Shikra: "Shikra-1"
     - LLaVA-RLHF: "LLaVARLHF-1"
     - RLHF-V: "RLHFV-1"
-  Github: "https://github.com/GenderBiasVL"
+  Github: "https://github.com/GenderBiasVL/GenderBias-VL"
   # About Me: "aboutme"
   # Resources:
   #   - Beautiful Jekyll: "https://beautifuljekyll.com"
