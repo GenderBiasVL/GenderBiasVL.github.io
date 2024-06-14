@@ -2203,7 +2203,7 @@ L -19 4666
 z
 " transform="scale(0.015625)"/>
      </defs>
-     <use xlink:href="#DejaVuSans-54"/>
+     <use xlink:href="#DejaVuSans-54>
      <use xlink:href="#DejaVuSans-65" x="44.083984"/>
      <use xlink:href="#DejaVuSans-61" x="105.607422"/>
      <use xlink:href="#DejaVuSans-63" x="166.886719"/>
