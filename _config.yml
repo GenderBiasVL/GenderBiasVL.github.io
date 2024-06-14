@@ -20,7 +20,7 @@ author: GenderBiasVL Team
 ###############################################
 
 navbar-links:
-  Home: "html/index"
+  Home: "index"
   Dataset: "dataset"
   LeaderBoards:
     - Open-source LVLMs: "open_sourceLVLMs"
